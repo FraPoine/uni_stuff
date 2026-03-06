@@ -1,0 +1,187 @@
+THEORY
+FIRST SLIDES
+
+Cryptography
+
+Two main methods:
+	Symmetric key - Single key
+	Public/Private key - Double key
+	
+Symmetric key cryptography
+	-Requires that both sender and recipient know the same key.
+	-The cryptographic schemes are differentiated by:
+		The kind of operation to transform the plaintext (P) into ciphertext (C):
+			Replacements: each element of P is replaced with another element
+			Transpositions: swappings are made between elements of P.
+		The way of “processing” P:
+			Block ciphers: P is processed by the algorithm “one block at a time”.
+			Flow ciphers: P is processed considering a single element at a time.
+
+Encryption techniques
+	Two basic mechanisms are applied to plaintext to obtain ciphertext:
+		substitutions
+		permutations
+	
+	Substitution Techniques
+		A substitution-based encryption technique replaces each plaintext element with another from the same alphabet. The process must be reversible to retrieve the original text. The key dictates how each element is substituted in the ciphertext.
+		Caesar's cipher
+		Shift Ciphers
+			There are only 25 possible shifts to try and it is easy to see when the used key is the right one.
+		Polyalphabetic cipher
+			Polyalphabetic ciphers are an alternative to monoalphabetic ones, relying on multiple substitution alphabets.
+			Vigenère cipher
+				best-known example of a polyalphabetic cipher.
+				The key is now a string, not just a character, and to each character is assigned a number according to the position
+in the alphabet
+				One weakness is the repeating nature of the key.
+		
+			Weaknesses of ENIGMA
+				The operators, rather than picking a random key would sometimes pick three consecutive letters from the Enigma keyboard such as QWE or BNM.
+			
+	Permutation Techniques
+		With permutations techniques, ciphertext is obtained by changing the order of the letters.
+		If the plaintext is written in diagonal sequences and then read in
+		line, the message "meet me after the toga party" becomes:
+		MEMATRHTGPRYETEFETEOAAT
+		
+		Rail fence technique
+			Plain text is written downwards and diagonally on successive "rails" of an imaginary fence, moving down till the bottom rail is reached and then up till the top rail is reached, continuing until the whole plaintext is written out.
+		
+		Other
+			An alternative is to write in a square the message line by line, and read it column by column by setting the order of reading between the columns
+			
+
+
+SECOND SLIDES 
+
+Cryptanalysis
+	Cryptanalysis is a set of techniques, set up 
+		to test the robustness of the algorithm and of the key by trying possible attacks against it
+		to break the code and infer the key from the available ciphertext or decrypt the ciphertext without knowing key
+	Two kinds of attacks:
+		Analytic
+		Brute-force
+	
+	A symmetrical encryption pattern is safe if:
+		The sender and the receiver receive and keep the key safely
+		The encryption algorithm is robust
+			an attacker in possession of a certain number of ciphertexts, but not of the encryption key, is unable to infer the plaintext or the key
+	Kerckhoffs’s principle:
+		It is assumed that the algorithm is known and that it is impractical to decipher messages by having only ciphertexts 
+		The encryption scheme is public; only the key is secret. It must be random and kept confidential. This ensures:
+			Keys are easier to protect and change than algorithms.
+		    	Standardization, deployment, and public validation are simplified.
+	
+Attacker’s Knowledge
+	Ciphertext only: A collection of ciphertexts
+	Known plaintext: A collection of ciphertexts and one or more pairs <plaintext, ciphertext>
+	Chosen plaintext: A collection of <plaintext, ciphertext> pairs	with plaintexts selected by the attacker
+	Chosen ciphertext: A collection of <plaintext, ciphertext> pairs with ciphertexts selected by the attacker
+	Chosen text: Two collections of pairs, <plaintext, ciphertext> one with chosen text and the other with chosen ciphertext
+	
+	The attacker tries:
+		to deduce the key used from a specific plain text, to compromise all future and past messages encrypted with that key
+		to guess the plain text from the encrypted text
+		
+	Brute force attacks
+		The attacker tests keys until plaintext appears.
+		On average, half of the keys must be tried.
+		Requires:
+			Some knowledge of the plaintext.
+			A way to distinguish plaintext from ciphertext.
+	
+	Levels of security
+		Unconditional security: The cipher is unbreakable, as ciphertext alone gives insufficient information.
+		Computational security: Breaking the cipher is infeasible with current resources (e.g., longer than the universe’s age).
+		Quantum threat: Future quantum algorithms could significantly reduce decryption time.
+	
+	Shannon's principles
+		Confusion: Complexifies the ciphertext-key relationship. Each ciphertext bit should depend on every key bit.
+		Diffusion: Spreads plaintext structure across ciphertext. Each ciphertext bit should depend on every plaintext bit.
+		Avalanche effect: Flipping one bit in plaintext or key should change about 50% of ciphertext bits.
+
+Perfect encryption
+	Perfect secrecy: Any message has the same probability of producing a given ciphertext.
+	Symmetric encryption: Uses substitutions and transpositions; no known efficient attack without the key.
+	Asymmetric encryption: Relies on hard mathematical problems, but a breakthrough could weaken security.
+
+XOR Cipher and One-Time-Pad
+	XOR (⊕): Boolean operation returning true when inputs differ.
+	Truth table:
+		0 ⊕ 0 = 1 ⊕ 1 = 0
+		0 ⊕ 1 = 1 ⊕ 0 = 1
+	Properties:
+		Identity: A ⊕ 0 = A
+		Self-inverse: A ⊕ A = 0
+		Commutative: A ⊕ B = B ⊕ A
+		Associative: A ⊕ (B ⊕ C) = (A ⊕ B) ⊕ C
+	Usage: Forms the basis of simple ciphers.
+	
+	XOR Cipher
+		The XOR cipher is a simple encryption method that applies the XOR (⊕) operation between each plaintext bit and a key bit. 
+		Since XOR is reversible (A ⊕ B ⊕ B = A), decryption is done by applying XOR again with the same key. 
+		It’s fast but insecure if the key is short or reused.
+	
+	Perfect encryption with OTP
+		The One-Time Pad (OTP) is a perfect encryption method where the plaintext is XORed with a truly random key of the same length. 
+		Since each key is used only once and is completely random, the ciphertext reveals no information about the plaintext, making it unbreakable.
+	
+	Many-Time Pad (MTP)
+		The Many-Time Pad (MTP) is a weaker version of the One-Time Pad (OTP), where the same key is reused multiple times for encrypting different messages. 
+		Reusing the key makes it vulnerable to attacks, as patterns can emerge, allowing the attacker to potentially break the encryption.
+		
+	
+THIRD SLIDES
+
+Block Ciphers
+		
+Block Ciphers General Structure
+	A block cipher is an algorithm that allows the encryption of blocks of fixed length
+	
+	Keyed Permutations
+		A block cipher can be referenced in general as a keyed permutation, more particularly:
+			It is a permutation over all the n-bit strings, because it maps each possible block to some other block
+			It is keyed because the key determines exactly which block is mapped to which
+	
+	Block Ciphers in practice
+		In practice all modern block ciphers are designed as a iterated ciphers
+		They have two common components
+			A key schedule algorithm, that produces r subkeys from a master key
+			A round function F(message, key), that is iterated r times over the input message
+		
+		Does iteration enable the implementation of a secure block cipher? Nobody knows
+			There are heuristic evidences that iterating simple functions makes a cipher secure
+			Not every function is good for iteration (e.g., linear functions)
+			In general, analyzing the security of block cipher is considered a hard problem
+
+The Data Encryption Standard (DES)
+	The Data Encryption Standard (DES) is a symmetric-key block cipher that encrypts data in 64-bit blocks using a 56-bit key. 
+	The encryption process involves 16 rounds of complex operations, including substitution (replacing bits) and permutation (rearranging bits), to transform plaintext into ciphertext. 
+	DES was widely used for decades in various applications, but due to its relatively short key length of 56 bits, it is vulnerable to brute-force attacks, where all possible keys are tried. 
+	As computational power increased, DES became insecure, leading to its replacement by more secure algorithms like AES.
+	
+	The main weaknesses of DES are its short key length of 56 bits, which makes it susceptible to brute-force attacks, and its relatively simple structure, which can be exploited by modern cryptanalysis techniques. 
+	Additionally, DES's 64-bit block size is considered small by today’s standards, making it vulnerable to certain types of attacks like birthday attacks.
+
+	Meet-in-the-Middle attack
+		The Meet-in-the-Middle attack targets double encryption by encrypting the plaintext and decrypting the ciphertext with all possible keys, then matching results to find the correct key pair, reducing brute-force complexity.
+
+
+The Advanced Encryption Standard
+	The Advanced Encryption Standard (AES) is a symmetric-key block cipher that replaces DES. It operates on 128-bit blocks and supports key sizes of 128, 192, and 256 bits.
+	
+	Structure
+	    	AES uses a substitution-permutation network (SPN) design, combining substitution, permutation, and mixing steps to provide strong encryption.
+	    	
+	Substitution-Permutation Networks
+	    	It applies several rounds of substitutions (S-box), permutations (shift rows), and mixing (mix columns) to obscure plaintext patterns.
+	    	
+	General Structure
+	    	AES operates in a series of rounds (10 for 128-bit key, 12 for 192-bit, 14 for 256-bit), each involving a series of transformations to enhance security.
+
+	Round Structure
+		Each round includes 4 steps: SubBytes (substitution), ShiftRows (permutation), MixColumns (mixing), and AddRoundKey (XOR with the round key). The final round omits MixColumns.
+
+	AES is highly efficient and secure, making it widely used for data encryption.
+	
+

@@ -1,0 +1,17 @@
+LAB 3 pratica
+
+
+ES 1
+gurdare il messaggio
+	capisco in cosa è scritto (in base alla base)
+	
+	capisco che non ha ancora capito un cazzo
+		travare un'altra base (solito 64)
+		
+	ci sono dei caratteri con il %
+		url decode
+	
+	sembra lei ma non ha senso
+		cesare
+	nice
+	

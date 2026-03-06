@@ -1,0 +1,35 @@
+[
+    {
+      "message": "Success!",
+      "next_endpoint": "/api/head_request_123",
+      "next_step": "Send a HEAD request to the endpoint in the next_endpoint field, the response headers will contain the next endpoint and instructions for the next step. More info on HEAD requests on /head"
+    },
+    {
+      "Content-Length": "0",
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Thu, 06 Mar 2025 10:25:29 GMT",
+      "Server": "waitress",
+      "X-Next-Endpoint": "/api/post_456_request",
+      "X-Next-Step": "Send a POST request to the endpoint in the X-Next-Endpoint header. The request body must contain a JSON payload with a key named \"secret_payload\" and the value \"a_JSON_payload\". The content type of the request must be \"application/json\". More info on POST requests on /post"
+    },
+    {
+      "message": "Success!",
+      "next_endpoint": "/api/cookie",
+      "next_step": "Send a GET request to the endpoint in the next_endpoint field with a cookie named \"secret\" with the value \"this_is_the_secret_cookie\", the response body will contain the instructions for the next step. More info on cookies on /cookies"
+    },
+    {
+      "message": "Success!",
+      "next_endpoint": "/api/query",
+      "next_step": "Send a GET request to the endpoint in the next_endpoint with a query parameter named \"secret\" with the value \"secret_query_parameter\", the response body will contain the instructions for the next step. More info on query parameters on /query"
+    },
+    {
+      "message": "Success!",
+      "next_endpoint": "/api/header_78_9",
+      "next_step": "Send a GET request to the endpoint in the next_endpoint field with a request header named \"X-Secret\" with the value \"this_is_the_secret_header\", the response body will contain the flag. More info on headers on /headers"
+    },
+    {
+      "flag": "UniTN{Mayb3_7he_Re4l_Trea$ur3_W4s_t5e_GET_We_Mad3_Al0ng_7he_W4y}",
+      "message": "Success!",
+      "next_step": "You have reached the end of the challenge!"
+    }
+  ]
