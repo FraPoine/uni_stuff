@@ -1,0 +1,35 @@
+Strategic manipulability without resoluteness or shared
+beliefs: Gibbard-Satterthwaite generalized
+
+
+Abstract
+The Gibbard-Satterthwaite Theorem on the manipulability of social-choice rules assumes resoluteness: there are no ties, no multi-member choice sets.
+
+
+Intro
+Social choice
+	allow strategic manipulation
+	the proftable misrepresentation of someone's preference
+
+The Gibbard-Satterthwaite Theorem (GS) is often said to show that manipulability is inescapable. 
+
+Manipulability is little affected by ties or beliefs about them
+
+
+THEOREM
+integer n. Denote 1, 2, . . . , n by i
+set A, j elements of A by x, y, z, nonempty countable subsets of A by
+X,Y.
+A profile is an ordered n-tuple of linear orderings of A denoted P = (P1,...,Pn), P'=(P1',...,Pn'), etc.
+An i-variant of P is any P' with P'j = Pj for all j != i.
+An X-lottery is any λ : X --> (0, 1] with Σ_{x∈X} λ(x) = 1. 
+A representative of Pi in X is any u : X-->R with u(x) > u(y)<-->xPiy for all x,y ∈ X.
+function C
+
+effective theorem
+assuming that mod A is grater equal then 3, and C tourn every P into a nonempty countable C(P) included in A, 4 condition are inconsistent.
+/M	-->	Nonmanipulability
+	for no P, i, and i-variant P' of P is this true: for every C(P')-lottery λ', some representative u of Pi in C(P) U C(P') has Σ_{x∈C(P')} λ'(x)u(x) > Σ_{x∈C(P)} λ(x)u(x) 
+
+
+

@@ -1,0 +1,295 @@
+{
+  "main": {
+    "id": "783467f7183299f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "77b7267706ad62b9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f868639c3e56bd25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "meetings/21 - 01.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "21 - 01"
+            }
+          },
+          {
+            "id": "bac56010a3c91cd6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interrogate, Receive.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Interrogate, Receive"
+            }
+          },
+          {
+            "id": "8c27e12e268dd2b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interrogate, Receive, Listen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Interrogate, Receive, Listen"
+            }
+          },
+          {
+            "id": "7705550b5dc63e33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "deep-research-report.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "deep-research-report"
+            }
+          },
+          {
+            "id": "853cbde26f87cda3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "commands.c backup 15-02.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "commands.c backup 15-02"
+            }
+          },
+          {
+            "id": "3aa2078e4d4d9ed4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "31f685430996d6e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "interrogate 19-02.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "interrogate 19-02"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "840bc38021c92ac3",
+    "type": "split",
+    "children": [
+      {
+        "id": "0b0617b9354e4a5c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "28d159662d958168",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "088630b59d430010",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "67cc121dd862cded",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "556b14ca62573838",
+    "type": "split",
+    "children": [
+      {
+        "id": "a65a54544b571c5a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d0b6594904606663",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "12-01 meeting.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 12-01 meeting"
+            }
+          },
+          {
+            "id": "8df59d2b58272a92",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "12-01 meeting.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 12-01 meeting"
+            }
+          },
+          {
+            "id": "45a292c68c0688be",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6b13a0e0c043df15",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "fa827f8d8ff7e609",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "12-01 meeting.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 12-01 meeting"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "31f685430996d6e7",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "interrogate 19-02.md",
+    "commands.c backup 15-02.md",
+    "deep-research-report.md",
+    "Testing.md",
+    "Interrogate, Receive, Listen.md",
+    "Listen.md",
+    "interrogate current 10-02.md",
+    "command.c backup.md",
+    "meetings/21 - 01.md",
+    "regolamento/Technical Specifications.md",
+    "regolamento/Flags.md",
+    "regolamento/System Overview.md",
+    "regolamento/regolamento.md",
+    "regolamento/Getting Started.md",
+    "regolamento/Schema Completo.md",
+    "regolamento/Handoff.md",
+    "regolamento",
+    "meetings",
+    "meetings/12-01 meeting.md",
+    "Welcome.md"
+  ]
+}

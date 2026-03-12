@@ -1,0 +1,109 @@
+	
+CASE OF STUDY
+
+Terminology	
+	Air Traffic Management (ATM)
+	Unmanned Aerial Vehicles (UAV)
+	Unmanned Aerial System (UAS)
+	UAS Traffic Management (UTM)
+	
+ATM in a nutshell 
+	Normal airplanes are bound by Air Traffic Management centers that tells them what to do, from local Control Towers to Air Control Centers (Largest one in Europe is in Maastricht).
+
+What should UTM do?
+	“The UTM will provide authentication, airspace design, airspace corridors, and dynamic geofencing, weather integration, constraint management (congestion prediction), sequencing and spacing as needed, trajectory changes to ensure safety, contingency management, separation management, transition locations and locations with NAS, and geo-fencing design and dynamic adjustments.» (NASA/TM—2014– 218299)
+	
+	
+Air space Classification
+
+	Class A Airspace
+		above 18,000 feet including the airspace overlying seas within 12 nautical miles
+
+	Class B Airspace
+		from the surface to 10,000 feet above the nation's busiest airports
+		
+	Class C Airspace
+		from surface to 4,000 feet above airports with operational control tower, serviced by a radar approach control, and sizeable operations or passengers.
+	
+	Class D Airspace
+		from the surface to 2,500 feet above airports that have an operational control tower.
+
+	Class E airspace	
+		None of the above but still controlled (eg military areas)
+
+	Class G Airspace
+		Unregulated one. Typically below 1,200 feet from surface and 5+ miles away from airports
+
+	ATC clearance is required for all aircraft to operate in Class A, B Airspace and must be able to fly an instrumented flight (for “clear of clouds might run a visual flight for B areas) 
+	Two way radio communication with ATC, control tower prior
+to entry and while in Class C and D
+
+Type of UTM
+	Portable UTM 
+		Arrive, set-up, operate, and leave
+		Support humanitarian, agricultural and other applications
+	Persistent UTM
+		Sustained, real-time, and continuous operations
+		manage national parks
+		good transportation between cities
+		small goods transportation in urban areas
+	Remotely piloted veihicle
+		normal airplane
+		pilot is in an office instead of a the plain 
+	Remotely piloted fleed
+		separation and management control automated
+		operation only intervene in off-nominal cases
+		
+Current Problem with UAVs
+	Lost link 
+	Latency
+	Levels of automation
+	Measured response
+	Detect and avoid 
+	**See NASA Memo**
+	
+Role of UAS «fleet manager»
+	Cloud-based UTM Service
+	Initial Set-up
+	Run-time control
+	Allocated airspace changes dynamically as needs change
+	See NASA memo for details (does it conforms with Amazon View?)
+
+Role of UTM «service provider»
+	Authentication
+	Airspace design, adjustments, and geo-fencing
+	Communication, Navigation, and Surveillance
+	Separation management
+	Weather integration
+	Contingency Management
+	
+UTM Services according to NASA
+	Regulatory Services
+		UAS fleet owner is bound by response
+		Security Services
+			Vehicle Registration
+			User Authentication
+			Flight Monitoring
+			System Health Monitoring
+		Flight Services
+			Flight Planning
+			Scheduling and Demand Management
+			Separation Assurance
+			Contingency Management
+	Information Services
+		UAS fleet owners use them to optimize its plan
+		Information Services:
+			Airspace Definition
+			Weather Information
+			Terrain and Obstructions
+			Traffic Operations
+			
+			
+MANDATORY DOCUMENT
+BLUEPRINT
+
+Revising the Airspace Model for the Safe Integration of Small Unmanned Aircraft Systems
+	key points
+		Necessità di un Sistema di Gestione del Traffico Aereo per sUAS
+	
+	****

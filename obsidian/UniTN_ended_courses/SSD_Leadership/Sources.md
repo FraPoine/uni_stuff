@@ -1,0 +1,27 @@
+- Simon Sinek's Top 3 Leadership Traits
+	- https://www.youtube.com/watch?v=FxS5n_gP4PM&ab_channel=SimonSinek
+- Great leadership starts with self-leadership | Lars Sudmann | TEDxUCLouvain
+	- https://www.youtube.com/watch?v=vlpKyLklDDY&ab_channel=TEDxTalks
+- What it takes to be a great leader | Roselinde Torres | TED
+	- https://www.youtube.com/watch?v=aUYSDEYdmzw&ab_channel=TED
+- What is Leadership?
+	- https://www.youtube.com/watch?v=18UVXW-x2_8&ab_channel=TheUniversityofSydney
+- What is leadership? - With David Marquet
+	- https://www.youtube.com/watch?v=pYKH2uSax8U&ab_channel=LeadershipNudgeswithDavidMarquet
+- What Makes a Leader Great?
+	- https://www.youtube.com/watch?v=NQN4mtTagL0&ab_channel=SimonSinek
+- Simon Sinek’s guide to leadership | MotivationArk
+	- https://www.youtube.com/watch?v=eXDNkwIeOqA&ab_channel=MotivationArk
+- What do all great leaders have in common | Matt Beeton | TEDxOxbridge
+	- https://www.youtube.com/watch?v=KgmKNKM0i1g&ab_channel=TEDxTalks
+- Why do we celebrate incompetent leaders? | Martin Gutmann | TEDxBerlin
+	- https://www.youtube.com/watch?v=DU06c7f9fzc&ab_channel=TEDxTalks
+- Leadership: A Very Short Introduction - By Keith Grint
+	- https://www.youtube.com/watch?v=vGALGgGQlzo&ab_channel=BooksxBits
+- Leaders Eat Last Summary (Animated) | Become A True Leader | Simon Sinek
+	- https://www.youtube.com/watch?v=UIaF_eZhn14&ab_channel=WizBuskOut-InsightsfromBooks
+- Breaking down Robb Stark's leadership | Game of Thrones leadership profiles
+	- https://www.youtube.com/watch?v=UWmHMZpfF5I&ab_channel=WigginLeadershipAcademy
+- What Makes a Great Leader?
+	- https://www.youtube.com/watch?v=ME5arjlSTGQ&ab_channel=HarvardBusinessReview
+

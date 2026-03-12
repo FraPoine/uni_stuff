@@ -1,0 +1,27 @@
+- 26/05/25
+	- abbiamo fatto gli asset primari
+	- da ricontrollare nomi e descrizioni
+	- ### domande per sartori di oggi
+		- i protocolli sono serivizi o informazioni?
+			- noi pensiamo che sono informazioni se chiamati protocolli, e servizzi se chiamati sistemi, anche se nell'effettivo non cambia nulla
+- 28/05/25
+	- iniziamo con il riguardare le cose fatte l'ultima volta
+	- impact analysis
+	- ### domande per sartori di oggi
+		- ha senso l'asset primario di assicurazione del canale di comunicazione
+		- chiarimento sul caso di studio, dobbiamo immaginare che potremmo addirittura essere una base militare, oppure dobbiamo astrarre il caso ad un esempio meno critico(e.g. amazon)
+		- Capire come fare l'impact analysis del power
+		- Personnel riguarda le persone in generale o i dipendenti e basta?
+- 29/05/25
+	- finiamo l'impact
+		- iniziamo con gli asset di supporto
+	- ### domande per sartori di oggi
+		- Capire se il bloccaggio di tutto fino a che non riparte è full 1 con 3 3 in capacità e performance
+- 06/06/25
+	- #### domande per sartori di oggi
+		- nelle slide c'è scritto che i pre-controll riduconon soltanto la likelyhood, ma non è così
+		- chiedere per gli extreme weather events
+		- UPS in post controls?
+			- nei post ci sono anche quelli correttivi, compensativi o di recovery e quindi pensiamo ci vadano
+- 10/06/25
+	- Oggi iniziamo a scrivere il report finale

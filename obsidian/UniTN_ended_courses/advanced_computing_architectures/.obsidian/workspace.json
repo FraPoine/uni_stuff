@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "8b81079982addbd5",
+    "type": "split",
+    "children": [
+      {
+        "id": "fcbbf6cb6fabc956",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a032d9aa26e5d0f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3. Basic Instruction Set Architectures.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. Basic Instruction Set Architectures"
+            }
+          },
+          {
+            "id": "46d347fa83de0a71",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "7. Memory organization design pt 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "7. Memory organization design pt 2"
+            }
+          },
+          {
+            "id": "5ba136b8f9063c67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exercises.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Exercises"
+            }
+          },
+          {
+            "id": "64ba36ee4f7d9dee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "17.11.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "17.11"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4be722f95f7519a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "52bd23266406e950",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a48d7c4feb409d8e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8593885f8963e54b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3d5e4169f6975124",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bb3e24c19efbfec7",
+    "type": "split",
+    "children": [
+      {
+        "id": "89a3b7d9248d3986",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2ebeb708968f79c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1. infos and introduction.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 1. infos and introduction"
+            }
+          },
+          {
+            "id": "493ce1fc9cf38b50",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1. infos and introduction.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 1. infos and introduction"
+            }
+          },
+          {
+            "id": "622ad33ef05151e2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "906c5f36c9d50f69",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1. infos and introduction.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 1. infos and introduction"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "64ba36ee4f7d9dee",
+  "lastOpenFiles": [
+    "Exercises.md",
+    "17.11.md",
+    "why i should choose this course.md",
+    "7. Memory organization design pt 2.md",
+    "3. Basic Instruction Set Architectures.md",
+    "slides/exercises.pdf",
+    "slides/03-Pipeline.pdf",
+    "5. Pipeline.md",
+    "slides/05-Memory_organization.pdf",
+    "Pipelining.md",
+    "slides/02-ISA_principles.pdf",
+    "1. infos and introduction.md",
+    "slides/01-Fundamentals_computer_design.pdf",
+    "slides",
+    "Welcome.md"
+  ]
+}

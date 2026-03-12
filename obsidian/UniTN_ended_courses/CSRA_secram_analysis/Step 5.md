@@ -1,0 +1,14 @@
+- Network routers \[A] \[B] \[C] \[D]
+	- Man-In-The-Middle --> Strong mutual authentication and Log inspection
+	- Unauthorized access --> Strong password policy and Access log audit + Forced password resets
+- Firewall \[A] \[B] \[C] \[D]
+	- Unauthorized Access --> MFA and Alert system for failed logins
+- Communication protocols (e.g. WiFi) \[A] \[B] \[C] \[D]
+	- Protocol bug exploitation --> Use hardened protocol versions and crash logs
+	- Sniffing --> encrypted payloads and IDS alerts
+- Servers \[A] \[B] \[C] \[D]
+	- Unauthorized Access --> MFA + disable unused accounts and Login anomaly detection
+	- Insiders threats --> .Least privilege + zero trust architecture and logging
+	- Malware infection --> Endpoint protection and Quarantine infected server
+- RF transceiver models  \[A] \[C] \[D]
+	- Over the air update attacks --> Signed OTA updates and update logs

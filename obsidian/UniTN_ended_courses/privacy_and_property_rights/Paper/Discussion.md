@@ -1,0 +1,43 @@
+### **6. Discussion (1 pagina)**
+Qui fai come il tuo amico:
+- riflessione critica
+- limiti di entrambi i sistemi
+- problemi attuali (cloud, SaaS, AI)
+👉 È la parte che pesa di più all’orale.
+
+---
+### **6. Discussion**
+L’analisi comparata tra il framework europeo e quello statunitense mostra come entrambi i sistemi cerchino di affrontare la stessa tensione di fondo: **proteggere il software come opera dell’ingegno senza trasformare il copyright in uno strumento di chiusura tecnologica**. Tuttavia, ciascun modello presenta limiti strutturali che emergono con particolare evidenza nel contesto delle tecnologie digitali contemporanee.
+
+Il principale punto di forza del modello europeo risiede nella **certezza giuridica**. La Direttiva 91/250/EEC (oggi codificata nella Direttiva 2009/24/EC) fornisce regole chiare sull’oggetto della tutela e sulle eccezioni ammesse, riducendo il rischio di interpretazioni divergenti tra Stati membri. Questa prevedibilità favorisce la pianificazione economica e riduce l’incertezza per gli operatori. Tuttavia, la stessa rigidità normativa può tradursi in una **scarsa adattabilità** a scenari tecnologici non previsti al momento dell’adozione della Direttiva, come quelli legati alla distribuzione del software tramite servizi cloud o piattaforme digitali.[1]
+
+Il modello statunitense, fondato su standard aperti come il **fair use** e su un ruolo centrale delle corti, appare invece **più flessibile e reattivo**. La giurisprudenza ha dimostrato di saper adattare il diritto d’autore a contesti tecnologici complessi, come nel caso _Google v. Oracle_, in cui la Corte Suprema ha riconosciuto la necessità di preservare l’innovazione cumulativa e la mobilità delle competenze degli sviluppatori. Tuttavia, questa flessibilità comporta un costo significativo in termini di **incertezza giuridica**: l’esito delle controversie dipende da valutazioni ex post, spesso accessibili solo a soggetti con risorse sufficienti per sostenere lunghi contenziosi.[2]
+
+Questi limiti diventano particolarmente evidenti nel contesto del **cloud computing e del Software as a Service (SaaS)**. In tali modelli, il software non viene più distribuito come copia, ma rimane sotto il controllo del fornitore. Ciò riduce drasticamente la possibilità, per l’utente, di esercitare diritti tradizionalmente riconosciuti, come l’osservazione del funzionamento del programma o il reverse engineering per interoperabilità. In Europa, l’art. 6 della Direttiva risulta di difficile applicazione quando l’utente non ha accesso al codice; negli Stati Uniti, il fair use perde efficacia quando la copia intermedia non è tecnicamente possibile. Questo spostamento di controllo rischia di **svuotare di contenuto pratico** le garanzie costruite nei modelli tradizionali.[3]
+
+Ulteriori criticità emergono con l’avvento dell’**intelligenza artificiale** e dei modelli di sviluppo basati su grandi quantità di codice preesistente. Sistemi di AI che apprendono da repository software sollevano interrogativi sulla liceità dell’uso del codice a fini di addestramento, sull’applicabilità del fair use negli Stati Uniti e sull’assenza, nel diritto europeo, di eccezioni specifiche per l’analisi automatizzata del software. Sebbene la recente normativa europea abbia introdotto eccezioni per il _text and data mining_, resta aperta la questione se tali strumenti siano sufficienti a bilanciare tutela del copyright e progresso tecnologico nel settore del software.[4]
+
+In definitiva, nessuno dei due modelli appare pienamente adeguato, da solo, ad affrontare le sfide poste dall’evoluzione tecnologica. Il modello europeo garantisce stabilità ma rischia l’obsolescenza; quello statunitense favorisce l’innovazione ma genera incertezza. La tensione tra **certezza e flessibilità**, emersa nel confronto UE–USA, non risulta quindi risolta, ma piuttosto amplificata dalle nuove forme di produzione e distribuzione del software. Questa constatazione apre la strada a una riflessione più ampia, sviluppata nelle conclusioni, sulla necessità di ripensare il ruolo del copyright nel contesto digitale contemporaneo.
+
+---
+# Sources
+1. Directive 2009/24/EC – Eur-Lex: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009L0024
+2. _Google LLC v. Oracle America, Inc._, 141 S. Ct. 1183 (2021): https://www.supremecourt.gov/opinions/20pdf/18-956_d18f.pdf
+3. ENISA, _Cloud Computing Risk Assessment_, https://www.enisa.europa.eu/publications/cloud-computing-risk-assessment
+4. Directive (EU) 2019/790 – DSM Directive, art. 3–4: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L0790
+
+---
+
+## **6. Discussion (versione riorganizzata e più coerente e snellita)**
+
+L’analisi comparata tra il framework europeo e quello statunitense mostra come entrambi gli ordinamenti affrontino la medesima tensione strutturale: **proteggere il software come opera dell’ingegno senza consentire che il copyright diventi uno strumento di chiusura tecnologica**. Pur perseguendo obiettivi sostanzialmente convergenti, i due modelli rivelano limiti differenti, che emergono con crescente evidenza nel contesto delle tecnologie digitali contemporanee.
+
+Il principale punto di forza del modello europeo risiede nella **certezza giuridica**. La Direttiva 91/250/EEC (oggi rifusa nella Direttiva 2009/24/EC) definisce in modo puntuale l’oggetto della tutela e le eccezioni ammesse, riducendo il rischio di frammentazione normativa e garantendo un’applicazione relativamente uniforme nel mercato interno. Tale prevedibilità favorisce la pianificazione economica e riduce l’incertezza per gli operatori. Al tempo stesso, però, la struttura tipizzata della Direttiva comporta un **rischio di rigidità**, limitando la capacità dell’ordinamento europeo di adattarsi a usi del software non previsti dal legislatore ma potenzialmente rilevanti sotto il profilo tecnologico ed economico.[1]
+
+Il modello statunitense, fondato su standard aperti come il **fair use** e su un ruolo centrale della giurisprudenza, appare invece **più flessibile e reattivo**. Le corti hanno dimostrato di saper adattare il copyright a contesti tecnologici complessi, come nel caso _Google v. Oracle_, valorizzando l’innovazione cumulativa e la mobilità delle competenze degli sviluppatori. Tuttavia, questa flessibilità comporta un costo sistemico in termini di **incertezza giuridica**, poiché la liceità di molti usi del software emerge solo ex post, attraverso valutazioni giudiziali difficilmente prevedibili.[2]
+
+I limiti di entrambi i modelli risultano particolarmente evidenti nel contesto del **cloud computing e del Software as a Service (SaaS)**. In tali architetture, il software non viene più distribuito come copia, ma rimane sotto il controllo del fornitore del servizio, riducendo l’effettività di diritti tradizionalmente riconosciuti agli utenti. In Europa, l’eccezione di cui all’art. 6 della Direttiva risulta difficilmente applicabile in assenza di accesso al codice; negli Stati Uniti, il fair use perde parte della sua funzione equilibratrice quando la copia intermedia non è tecnicamente possibile. In entrambi i casi, lo spostamento verso il modello “as a service” rischia di **svuotare di contenuto pratico** i meccanismi di bilanciamento costruiti nei modelli tradizionali.[3]
+
+Ulteriori criticità emergono con l’affermarsi dell’**intelligenza artificiale** e dei modelli di sviluppo basati sull’analisi automatizzata di grandi quantità di codice. L’uso del software a fini di addestramento solleva interrogativi sulla qualificazione di tali pratiche e sull’adeguatezza degli strumenti tradizionali di bilanciamento. Negli Stati Uniti, il fair use potrebbe astrattamente estendersi a tali utilizzi, ma con esiti incerti; nell’Unione Europea, la mancanza di eccezioni specifiche per l’analisi del software accentua il rischio di una tutela eccessivamente restrittiva, nonostante l’introduzione di eccezioni per il _text and data mining_ in altri ambiti.[4]
+
+Nel complesso, la discussion conferma che **nessuno dei due modelli, isolatamente considerato, è pienamente adeguato** a fronteggiare l’evoluzione tecnologica. Il modello europeo privilegia stabilità e prevedibilità, ma rischia l’obsolescenza; quello statunitense favorisce l’adattabilità, ma genera incertezza e asimmetrie. La tensione tra **certezza giuridica e flessibilità**, emersa come asse centrale del confronto UE–USA, non risulta quindi risolta, ma piuttosto accentuata dalle nuove modalità di produzione e distribuzione del software, aprendo la strada alla riflessione conclusiva sul ruolo futuro del copyright nel contesto digitale.

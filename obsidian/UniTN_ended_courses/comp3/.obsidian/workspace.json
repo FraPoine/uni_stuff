@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "98ff9831f785ab57",
+    "type": "split",
+    "children": [
+      {
+        "id": "25d6c3a692c3ca5f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "933bc182ee35bd5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Definitions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Definitions"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4fe499693b6c183d",
+    "type": "split",
+    "children": [
+      {
+        "id": "f75bc46d88eea212",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7eab93640eb44586",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "278f417fd4e045d0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3b3ead89d0f1516b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f7da7d15bbf4d89c",
+    "type": "split",
+    "children": [
+      {
+        "id": "534ca884b07c3faf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21c1d494a2958a37",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "20241223.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 20241223"
+            }
+          },
+          {
+            "id": "c4ecf6b2333396d3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "20241223.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 20241223"
+            }
+          },
+          {
+            "id": "20a3014daa10c578",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d201c9a43d9a0b31",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Definitions.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Definitions"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "933bc182ee35bd5c",
+  "lastOpenFiles": [
+    "Exercise/Ex 24.md",
+    "Definitions.md",
+    "Other complexity classes.md",
+    "Self-assessment questions.md",
+    "ciao.md",
+    "Exercise/Ex 31.md",
+    "Exercise/Ex 37.md",
+    "Exercise/Ex 33.md",
+    "20241223.pdf",
+    "Exercise/Ex 42.md",
+    "Exercise/Ex 43.md",
+    "Exercise/Ex 44.md",
+    "Exercise/Ex 41.md",
+    "Untitled 1.md",
+    "Exercise/Ex 40.md",
+    "Exercise/Ex 23.md",
+    "Exercise/Ex 39.md",
+    "Exercise/Ex 38.md",
+    "Exercise/Ex 36.md",
+    "Exercise/Ex 35.md",
+    "Exercise/Ex 34.md",
+    "Exercise/Ex 32.md",
+    "Exercise/Ex 30.md",
+    "Exercise/Ex 28.md",
+    "Exercise/Ex 29.md",
+    "Exercise/Ex 27.md",
+    "Exercise/Ex 26.md",
+    "Exercise"
+  ]
+}

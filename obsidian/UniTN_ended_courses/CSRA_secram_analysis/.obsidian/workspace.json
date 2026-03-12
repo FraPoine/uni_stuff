@@ -1,0 +1,241 @@
+{
+  "main": {
+    "id": "ce8871590cc1a81b",
+    "type": "split",
+    "children": [
+      {
+        "id": "5472c57924dc53c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6b765a5f8b2a4cc2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "grade_system.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "grade_system"
+            }
+          },
+          {
+            "id": "7fd5f6e42a69e4d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Step 3 and 4.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Step 3 and 4"
+            }
+          },
+          {
+            "id": "e0152c6f54b2ea54",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Step 5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Step 5"
+            }
+          },
+          {
+            "id": "5f4d2069bd513586",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SUMMARY OF FINDINGS (max ½ page).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SUMMARY OF FINDINGS (max ½ page)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5c50a1b5c09d645c",
+    "type": "split",
+    "children": [
+      {
+        "id": "d889adab296194a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b37ab706bae5838",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f752b8d8263c9729",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#Servers",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ebd0e0e676fc21ea",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b83b84a9a3d19b07",
+    "type": "split",
+    "children": [
+      {
+        "id": "e48407b8b2513e7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a2558a8b8015f390",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "primary_assets/primary_assets.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for primary_assets"
+            }
+          },
+          {
+            "id": "486ca6d52fcc35a0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "req_documents.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from req_documents"
+            }
+          },
+          {
+            "id": "f504c97206c4887c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0029e5841ce2495c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "req_documents.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of req_documents"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "6b765a5f8b2a4cc2",
+  "lastOpenFiles": [
+    "DIARIO.md",
+    "SUMMARY OF FINDINGS (max ½ page).md",
+    "Step 5.md",
+    "Step 3 and 4.md",
+    "Step 2.md",
+    "SecRAM-Methodology-TN-VU-2024.pdf",
+    "Impact_analysis/impact notes.md",
+    "grade_system.md",
+    "EASA_notes.md",
+    "2025-05-27.md",
+    "primary_assets/20250321_L07_CybRisk-2025-07-Exercise 01 Asset review.pdf",
+    "secondary_assets/secondary_assets.md",
+    "secondary_assets",
+    "study_case.pdf",
+    "Impact_analysis/Impact_analysis.pdf",
+    "primary_assets/primary_assets.md",
+    "Impact_analysis",
+    "Untitled.canvas",
+    "notes.md",
+    "req_docs/amazon-revising-the-airspace-model-for-the-safe-integration-of-suas6-0.pdf",
+    "req_docs/easa_concept_paper_guidance_for_level_1and2_machine_learning_applications_proposed_issue_02_feb2023.pdf",
+    "primary_assets/amazon_notes.md",
+    "primary_assets",
+    "CSRA final report in pdf 2.txt",
+    "req_documents.md"
+  ]
+}

@@ -1,0 +1,1 @@
+-Dcatalina.base="/home/fede/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0" -Dcatalina.home="/opt/tomcat9" -Dwtp.deploy="/home/fede/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps" -Djava.library.path="/opt/tomcat9/bin" 

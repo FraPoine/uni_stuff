@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "cae487ff71143410",
+    "type": "split",
+    "children": [
+      {
+        "id": "7ccd0295a9776135",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3dac956cb1446a9b",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "MachineLearningNotes.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "MachineLearningNotes"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ef8a7829fe2d89b4",
+    "type": "split",
+    "children": [
+      {
+        "id": "aeb35a84e9464002",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0cd083a0ea1565f4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "89b76fecc6658a71",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "eb99d5ca06e4d904",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "083bb87e1db5fa46",
+    "type": "split",
+    "children": [
+      {
+        "id": "34b2add1ceb76b55",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f18e47632953845",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MachineLearningNotes.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for MachineLearningNotes"
+            }
+          },
+          {
+            "id": "9ea2b08404776820",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "MachineLearningNotes.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from MachineLearningNotes"
+            }
+          },
+          {
+            "id": "95792103fb2a134e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "07e113d5f4ed6918",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "MachineLearningNotes.pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of MachineLearningNotes"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "3dac956cb1446a9b",
+  "lastOpenFiles": [
+    "1. Introduction.md",
+    "MachineLearningNotes.pdf",
+    "4. Linear algebra.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "3. K-Nearest Neighbors (kNN).md",
+    "2. Decision Trees.md",
+    "Welcome.md"
+  ]
+}
