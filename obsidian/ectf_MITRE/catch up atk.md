@@ -1,0 +1,2 @@
+- [ ] understand the remote scenario
+- [ ] understand how to perform an attack 

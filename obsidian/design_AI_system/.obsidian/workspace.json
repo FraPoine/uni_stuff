@@ -4,67 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "2d86407f04d88523",
+        "id": "205628212df458e2",
         "type": "tabs",
         "children": [
           {
-            "id": "7c2885988aab54f6",
+            "id": "1fb04131f233fa4a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1) 02-26 - Introduction - Software 3.0.md",
+                "file": "midterm/beta - bootstrapping/beta - bootstrapping.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1) 02-26 - Introduction - Software 3.0"
-            }
-          },
-          {
-            "id": "4bdd0fbafd84940f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2) 02-27 - Hello Software 3.0 + 2026 bonus.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2) 02-27 - Hello Software 3.0 + 2026 bonus"
-            }
-          },
-          {
-            "id": "e0f5ea66c736865e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3) 03-05 ** lezione da riguardare.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "3) 03-05 ** lezione da riguardare"
-            }
-          },
-          {
-            "id": "5ec2c3cbfd269e23",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "assignment x 12-05.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "assignment x 12-05"
+              "title": "beta - bootstrapping"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -137,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1) 02-26 - Introduction - Software 3.0.md",
+                "file": "midterm/21 - 56/(2) basi della probabilità.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 1) 02-26 - Introduction - Software 3.0"
+              "title": "Backlinks for (2) basi della probabilità"
             }
           },
           {
@@ -156,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1) 02-26 - Introduction - Software 3.0.md",
+                "file": "midterm/21 - 56/(2) basi della probabilità.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 1) 02-26 - Introduction - Software 3.0"
+              "title": "Outgoing links from (2) basi della probabilità"
             }
           },
           {
@@ -226,10 +183,32 @@
       "bases:Create new base": false
     }
   },
-  "active": "5ec2c3cbfd269e23",
+  "active": "1fb04131f233fa4a",
   "lastOpenFiles": [
+    "midterm/beta - bootstrapping",
+    "midterm/beta - bootstrapping/beta - bootstrapping.md",
+    "midterm/Test on metodology.md",
+    "midterm/random - normal/Normal distribution.md",
+    "midterm/random - normal/Binomial distribution.md",
+    "midterm/random - normal/Test.md",
+    "midterm/random - normal/Random variables to Variance e Standard Deviation.md",
+    "midterm/21 - 56/Many Coin Flips.md",
+    "midterm/random - normal",
+    "midterm/21 - 56/(4) total probability + Bayes..md",
+    "midterm/21 - 56/(3) conditional probability + independence.md",
+    "midterm/21 - 56/(2) basi della probabilità.md",
+    "midterm/21 - 56/(1) counting e combinatorics.md",
+    "midterm/21 - 56/Test.md",
+    "midterm/21 - 56",
+    "midterm",
+    "10) 9 - 04 Monitoring & Observability.md",
+    "9) Eval in software 2.0.md",
+    "7) \"Eval\" in Software 1.0 (traditional), 2.0 (ML), and 3.0 (AI agents).md",
+    "8).md",
+    "6) 03-13 EVAL.md",
+    "5) 03 - 12.md",
+    "assignment x 03-12.md",
     "3) 03-05 ** lezione da riguardare.md",
-    "assignment x 12-05.md",
     "2) 02-27 - Hello Software 3.0 + 2026 bonus.md",
     "1) 02-26 - Introduction - Software 3.0.md",
     "Welcome.md"
