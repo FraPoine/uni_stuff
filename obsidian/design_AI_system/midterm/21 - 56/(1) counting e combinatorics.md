@@ -1,4 +1,4 @@
-## 1. Counting: l’idea di fondo
+	## 1. Counting: l’idea di fondo
 
 Il counting serve a rispondere a domande del tipo:
 - quante possibilità ci sono?

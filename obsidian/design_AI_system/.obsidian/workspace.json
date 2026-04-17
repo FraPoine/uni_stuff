@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "205628212df458e2",
+        "id": "dfe5895d66a8d2d3",
         "type": "tabs",
         "children": [
           {
-            "id": "1fb04131f233fa4a",
+            "id": "e515ff850dcd7979",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "midterm/beta - bootstrapping/beta - bootstrapping.md",
+                "file": "midterm/21 - 56/(1) counting e combinatorics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "beta - bootstrapping"
+              "title": "(1) counting e combinatorics"
             }
           }
         ]
@@ -183,34 +183,42 @@
       "bases:Create new base": false
     }
   },
-  "active": "1fb04131f233fa4a",
+  "active": "e515ff850dcd7979",
   "lastOpenFiles": [
-    "midterm/beta - bootstrapping",
+    "Lessons/11) 04 - 16.md",
+    "midterm/beta - bootstrapping/beta_distribution_bootstrapping.pdf",
+    "midterm/random - normal/random_variables_binomial_distribution.pdf",
+    "midterm/random - normal/normal_distribution.pdf",
+    "midterm/21 - 56/probability_bayes_theorem.pdf",
+    "midterm/21 - 56/many_coin_flips.pdf",
+    "Lessons/assignment x 03-12.md",
+    "Lessons",
+    "midterm/21 - 56/(3) conditional probability + independence.md",
+    "midterm/21 - 56/(4) total probability + Bayes..md",
+    "midterm/21 - 56/(1) counting e combinatorics.md",
+    "midterm/beta - bootstrapping/Test.md",
+    "midterm/Midterm Mock.md",
+    "midterm/metodology",
     "midterm/beta - bootstrapping/beta - bootstrapping.md",
-    "midterm/Test on metodology.md",
+    "midterm/ProbabilityForComputerScientists.pdf",
+    "midterm/metodology/21.Methodology1.annotated_short.pdf",
+    "midterm/beta - bootstrapping",
+    "midterm/metodology/Test on metodology.md",
     "midterm/random - normal/Normal distribution.md",
     "midterm/random - normal/Binomial distribution.md",
     "midterm/random - normal/Test.md",
     "midterm/random - normal/Random variables to Variance e Standard Deviation.md",
     "midterm/21 - 56/Many Coin Flips.md",
-    "midterm/random - normal",
-    "midterm/21 - 56/(4) total probability + Bayes..md",
-    "midterm/21 - 56/(3) conditional probability + independence.md",
     "midterm/21 - 56/(2) basi della probabilità.md",
-    "midterm/21 - 56/(1) counting e combinatorics.md",
     "midterm/21 - 56/Test.md",
-    "midterm/21 - 56",
-    "midterm",
-    "10) 9 - 04 Monitoring & Observability.md",
-    "9) Eval in software 2.0.md",
-    "7) \"Eval\" in Software 1.0 (traditional), 2.0 (ML), and 3.0 (AI agents).md",
-    "8).md",
-    "6) 03-13 EVAL.md",
-    "5) 03 - 12.md",
-    "assignment x 03-12.md",
-    "3) 03-05 ** lezione da riguardare.md",
-    "2) 02-27 - Hello Software 3.0 + 2026 bonus.md",
-    "1) 02-26 - Introduction - Software 3.0.md",
-    "Welcome.md"
+    "Lessons/10) 9 - 04 Monitoring & Observability.md",
+    "Lessons/9) Eval in software 2.0.md",
+    "Lessons/7) \"Eval\" in Software 1.0 (traditional), 2.0 (ML), and 3.0 (AI agents).md",
+    "Lessons/8).md",
+    "Lessons/6) 03-13 EVAL.md",
+    "Lessons/5) 03 - 12.md",
+    "Lessons/3) 03-05 ** lezione da riguardare.md",
+    "Lessons/2) 02-27 - Hello Software 3.0 + 2026 bonus.md",
+    "Lessons/1) 02-26 - Introduction - Software 3.0.md"
   ]
 }
