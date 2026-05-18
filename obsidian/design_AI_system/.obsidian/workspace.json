@@ -8,17 +8,59 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e515ff850dcd7979",
+            "id": "b0690adf819a012e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "midterm/21 - 56/(1) counting e combinatorics.md",
+                "file": "Project/Multi-Agent Personalities.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "(1) counting e combinatorics"
+              "title": "Multi-Agent Personalities"
+            }
+          },
+          {
+            "id": "d07af3930ba6c249",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sprint 1/Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "9b9eef27984a9f8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sprints.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sprints"
+            }
+          },
+          {
+            "id": "cfa7fd2e7f89a4f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sprint 1/Project Proposal.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Project Proposal"
             }
           }
         ]
@@ -183,8 +225,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "e515ff850dcd7979",
+  "active": "b0690adf819a012e",
   "lastOpenFiles": [
+    "Sprint 1/Project Proposal.md",
+    "Sprints.md",
+    "Sprint 1/Untitled.md",
+    "Project/Multi-Agent Personalities.md",
+    "Project/Universal Project Scaffolding.md",
+    "Sprint 1",
+    "Sprint 1.md",
+    "Project/Project Deliverables & Sprint Rules.md",
+    "Project/Option 1 - Conversational Clustering.md",
+    "midterm/21 - 56/(1) counting e combinatorics.md",
+    "Project.md",
+    "Project",
     "Lessons/11) 04 - 16.md",
     "midterm/beta - bootstrapping/beta_distribution_bootstrapping.pdf",
     "midterm/random - normal/random_variables_binomial_distribution.pdf",
@@ -195,14 +249,11 @@
     "Lessons",
     "midterm/21 - 56/(3) conditional probability + independence.md",
     "midterm/21 - 56/(4) total probability + Bayes..md",
-    "midterm/21 - 56/(1) counting e combinatorics.md",
     "midterm/beta - bootstrapping/Test.md",
     "midterm/Midterm Mock.md",
     "midterm/metodology",
     "midterm/beta - bootstrapping/beta - bootstrapping.md",
     "midterm/ProbabilityForComputerScientists.pdf",
-    "midterm/metodology/21.Methodology1.annotated_short.pdf",
-    "midterm/beta - bootstrapping",
     "midterm/metodology/Test on metodology.md",
     "midterm/random - normal/Normal distribution.md",
     "midterm/random - normal/Binomial distribution.md",
@@ -211,14 +262,6 @@
     "midterm/21 - 56/Many Coin Flips.md",
     "midterm/21 - 56/(2) basi della probabilità.md",
     "midterm/21 - 56/Test.md",
-    "Lessons/10) 9 - 04 Monitoring & Observability.md",
-    "Lessons/9) Eval in software 2.0.md",
-    "Lessons/7) \"Eval\" in Software 1.0 (traditional), 2.0 (ML), and 3.0 (AI agents).md",
-    "Lessons/8).md",
-    "Lessons/6) 03-13 EVAL.md",
-    "Lessons/5) 03 - 12.md",
-    "Lessons/3) 03-05 ** lezione da riguardare.md",
-    "Lessons/2) 02-27 - Hello Software 3.0 + 2026 bonus.md",
-    "Lessons/1) 02-26 - Introduction - Software 3.0.md"
+    "Lessons/10) 9 - 04 Monitoring & Observability.md"
   ]
 }

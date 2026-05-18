@@ -1,4 +1,4 @@
-# 1) what is social well being
+# 1) what is social wellbeing
 ### Experiment
 - Robot AI emergency room
 - 3 patient that need organ transfer 
@@ -31,3 +31,5 @@ in the context of socal wellbeing if we exclusively think about  what is best fo
 what is the sensation of social well being 
 the sense of sacrifice 
 who would be right sacrifice for the majority
+
+
